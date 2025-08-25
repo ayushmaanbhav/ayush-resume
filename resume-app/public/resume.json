@@ -1,0 +1,304 @@
+{
+  "name": "Ayush Jain",
+  "title": "Leader, Architect",
+  "contact": {
+    "phone": "(+91) 8544130924",
+    "email": "ayushmaanbhav1008@gmail.com",
+    "linkedin": "linkedin.com/in/ayusjain",
+    "linkedinUrl": "https://linkedin.com/in/ayusjain",
+    "hashtags": "#Save-Paper #Relevant-Links-Included"
+  },
+  "summary": "Engineering leader with <b>10+ years</b> driving impactful product and technology outcomes across startups and MNCs. Delivered <b>intelligent, robust, resilient, secure and LLM-enabled systems</b>. Blend of generalist adaptability and deep specialist expertise, excelling in strategic, high‑impact roles. Proven record of leading cross‑functional initiatives that accelerated technical and business growth.",
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Microsoft",
+      "companyUrl": "http://microsoft.com",
+      "date": "03/2024 - Present",
+      "details": [
+        {
+          "label": "Team",
+          "value": "My team owned <b>M365 Copilot</b> and <b>M365 Office Home</b>, both Web and Native Apps."
+        },
+        {
+          "label": "Technologies",
+          "value": "<b>.NET</b>, <b>Azure</b>, <b>React</b>, <b>C#</b>, <b>C++</b>."
+        },
+        {
+          "label": "Role",
+          "value": "Led the team on <b>M365 security initiatives</b>, strengthened <b>user data privacy</b>, critical role in launching first-versions of <b>M365 Copilot</b>."
+        }
+      ],
+      "achievements": [
+        "<b>Product Launches & Innovation:</b> <b>Launched M365 Copilot</b>, <b>top-priority of Satya Nadella</b>; owned backend, worked corss-teams for on‑time delivery, grew to <b>1M</b> MAU.",
+        "<b>Launched M365 Copilot across 2 sovereign clouds</b> within 1.5 months, by leading a team of 2-devs.",
+        "<b>Built OS‑level Copilot voice‑and‑vision prototype</b> (inspired by Rewind.ai) as part of Microsoft Hackathon (FHL).",
+        "<b>Privacy & Security Engineering:</b> <b>20% faster auth</b> by upgrading to secure, performant protocols like PFT‑PoP & OBO, and optimized token‑caching/claims validation.",
+        "<b>Led 8-dev team, drove criticals, delivered 245 security tasks</b> in 2 months across 15 KPIs and multiple cloud environments.",
+        "<b>Fixed GDPR issues</b> & enhanced privacy safeguards in user‑data flows, coordinating cross‑team to ensure E2E compliance.",
+        "<b>Operational Excellence:</b> <b>Lowered false alerts by 20%, on‑call-dev TAT by 50%</b>, by revamping monitor logic and improving SoPs, leading a team of 4-devs.",
+        "<b>Improved documentation quality with 11 new technical video-docs</b>, boosting team onboarding and cross‑knowledge transfer.",
+        "<b>Reduced setup time by 30%</b> by automating sovereign‑cloud infra provisioning via ARM templates for new EU sov-clouds setup.",
+        "<b>Leadership & Mentorship:</b> <b>Hired and doubled the dev-count to 80. 2-peer-promotions</b>, achieved through active mentorship to juniors and peer support.",
+        "<b>Drove impactful action-items increasing 10% dev-productivity</b>, by alignment on security standards, AI integration, and best practices.",
+        "<b>Actively shaped Copilot’s use in my team and org</b>, providing high‑value feedback as a power user to help shape AI usage and policies.",
+        "<b>Improved dev-productivity by 10% by adding AI‑powered</b> code-review bot, issue-delegation bot, and some workflow bots."
+      ]
+    },
+    {
+      "title": "Staff Product Engineer",
+      "company": "Lifease",
+      "companyUrl": "https://www.lifease.in/",
+      "date": "08/2023 - 11/2023",
+      "details": [
+        {
+          "value": "Led the engineering team for Lifease, a hyperlocal e-commerce platform. <b>Technologies</b>: <b>Azure</b>, <b>ReactJS</b>, <b>Java-Springboot</b>."
+        }
+      ],
+      "achievements": [
+        "<b>Hired, mentored, and led a 7-developer team</b>, fostering collaboration, technical upskilling, and ownership culture.",
+        "<b>Launched app and core modules</b>: <b>orders</b>, <b>search</b>, <b>payments</b>, <b>communications</b>, inventory, logistics and CRM.",
+        "<b>Onboarded 3000+ sellers</b> in Bangalore, Whitefield and Bellandur areas, and <b>achieved an average daily order volume of 150+.</b>"
+      ]
+    },
+    {
+      "title": "Product Engineer",
+      "company": "VERSE",
+      "companyUrl": "https://verseisbetter.com/",
+      "date": "03/2023 - 07/2023",
+      "details": [
+        {
+          "value": "Co-created an AI-enabled social network for influencers, investors & founders. <b>Technologies</b>: <b>Azure</b>, <b>React</b>, <b>NodeJS</b>, <b>OpenAI</b>, <b>WhatsApp</b>."
+        }
+      ],
+      "achievements": [
+        "<b>Set product vision</b> for an <b>AI enabled social platform</b>, uniquely combining WhatsApp’s communication capabilities with OpenAI-powered intelligence to foster high-quality and efficient connections among LANIs (Large Active Network Individuals).",
+        "<b>Developed and launched core features</b> supporting curated introductions, summarizations, status updates, reminders, and <b>AI-driven conversation assistants</b>, enhancing networking effectiveness and ensuring connections are purposeful, relevant, and time-efficient.",
+        "<b>Onboarded 20K users</b> and nurtured the platform's growth to <b>5k WAU</b> through active brainstorming and feedback."
+      ]
+    },
+    {
+      "title": "Tech Lead",
+      "company": "Navi Technologies",
+      "companyUrl": "https://navi.com/",
+      "date": "11/2020 - 11/2022",
+      "details": [
+        {
+          "label": "Team & Role",
+          "value": "<b>Insurance Engineering</b>. Headed core engineering and product initiatives for a fast-scaling insurance platform. Led the tech team from its inception, playing a pivotal role in technology strategy, execution, team building, and continuous improvement. <b>Technologies</b>: <b>Android</b>, <b>Kotlin</b>, <b>Java</b>, <b>SpringBoot</b>, <b>React</b>, <b>AWS</b>, <b>Firebase</b>, <a href='https://camunda.com/' target='_blank' rel='noopener noreferrer'><b>Camunda</b></a>, <b>Postgres</b>, <b>Redis</b>, <b>Kafka</b>, <b>Kubernetes</b>, etc."
+        },
+        {
+          "label": "Team & Role",
+          "value": "<b>CRM Engineering.</b> Drove full-stack engineering for a cloud-native CRM ticket management platform, conceptualize and deliver real-time customer chat, agent-assignment systems, and intelligent bot support. <b>Technologies</b>: <b>Java</b>, <b>SpringBoot</b>, <b>GCP</b>, <b>Firebase</b>, <b>Firestore</b>, <b>AWS</b>, <b>DynamoDB</b>, <b>Postgres</b>, <b>Redis</b>, <b>Kafka</b>, <b>Kubernetes</b>, <b>Temporal</b> etc."
+        }
+      ],
+      "achievements": [
+        "<b>Created health insurance stack in under a month</b> (recognized by Sachin Bansal). Created and <b>owned business‑critical microservices</b> (<b>payments</b>, <b>product-platform</b>, <b>pricing-engine</b>, <b>policies</b>).",
+        "<b>Launched 8+ products</b> handling <b>20k+ DAU</b> and <b>300+ daily purchases</b>.",
+        "<b>Engineering Leadership & Delivery:</b> <b>Led teams for 13+ major features</b>, conducted & took <b>270+ interviews</b>, mentored 8 engineers (<b>6 promoted</b>), and <b>grew the team from 2 → 40</b>.",
+        "Increased onboarding efficiency by 30% through documentation & playbooks.",
+        "Ran bi‑weekly tech sessions, sprint planning & retrospectives, maintained stakeholder alignment to sustain productivity.",
+        "<b>Product Growth & Conversions:</b> <b>Drove payments</b> (integrations with Juspay/Razorpay/PayU) and <b>dynamic-gateway-switching</b> (<b>raising conversion by 5%</b>).",
+        "<b>Reduced EMI drop‑offs by 8%</b> and <b>boosted renewal-conversions by 5%</b>.",
+        "Enabled <b>experimentation</b> & funnels (Firebase, MoEngage, customer interviews), <b>improving conversions by 10–60%</b> across plans, payments, and customer contexts.",
+        "Simplified waiting periods, drove an additional <b>5% conversion</b>.",
+        "<b>Boosted product-launch-efficiency by 30-60%</b> through automation.",
+        "<b>Customer Ops & Compliance:</b> <b>Automated refunds</b> (<b>boosted agent-productivity 5%</b>) and <b>improved UI & APIs</b> for endorsements & purchases (<b>additional 5% agent-productivity</b>).",
+        "Enhanced serviceability & visibility (<b>5% fewer customer-requests, +5% agent-productivity</b>).",
+        "Represented tech in IRDAI audits and drove security compliance (WAF rules, repo/API checks).",
+        "<b>Systems & Reliability:</b> <b>Enabled 10x scalability with 20% infra cost reduction</b>.",
+        "Strengthened system reliability via <b>Resilience4j</b> (circuit breakers/retries).",
+        "Achieved <b>80% test coverage</b>, integrated monitoring (Grafana, Prometheus, PagerDuty) for debugging and readiness.",
+        "Jointly created <b>ticket-management-system</b> based on <b>real-time</b>, <b>customer-chat</b> and <b>agent-assignment</b> with <b>bot-support</b>.",
+        "Designed and implemented <b>ticketing-workflows</b> for the home-loans team. Nurtured the system growth to handle <b>20k tickets a day</b>."
+      ]
+    },
+    {
+      "title": "Co-founder",
+      "company": "Enlite",
+      "companyUrl": "https://enlite.in",
+      "date": "05/2020 - 10/2020",
+      "details": [
+        {
+          "value": "<b>Developed a feature-rich solution for virtual-classes, exams and classroom-management.</b> Focused on internet-bandwidth-optimisation, smartphone-first-approach and ease-of-administration. Minimalist, microservices-based-architecture enabled highly competitive pricing. <b>Technologies</b>: <b>React</b>, <b>TypeScript</b>, <b>GCP</b>, <b>MongoDB</b>, <b>S3</b>, <a href='https://bigbluebutton.org/' target='_blank' rel='noopener noreferrer'><b>BigBlueButton</b></a>, <b>ReTool</b> etc."
+        }
+      ]
+    },
+    {
+      "title": "SSE",
+      "company": "Logward",
+      "companyUrl": "https://www.logward.com/",
+      "companySubtitle": "Leschaco",
+      "companySubtitleUrl": "https://www.leschaco.com/",
+      "date": "05/2019 - 01/2020",
+      "details": [
+        {
+          "value": "Jointly <b>created a flexible SCM</b> system with <b>freight-forwarder</b> & <b>control-tower</b> models. Launched the <b>first</b> & <b>last-leg</b> (Germany-China) of <b>Ocean-Freight-FCL</b> with <b>80+%</b> test-coverage-&-automation. <b>Technologies</b>: <b>C#</b>, <b>React</b>, <b>Java</b>, <b>AWS</b>, <a href='https://camunda.com/' target='_blank' rel='noopener noreferrer'><b>Camunda</b></a>, <b>Consul</b>, <b>Redis</b>, <b>SQS</b>, etc."
+        }
+      ]
+    },
+    {
+      "title": "Co-founder",
+      "company": "Fataka Games",
+      "companyUrl": "https://www.linkedin.com/company/fataka-games/about/",
+      "date": "05/2018 - 12/2018",
+      "details": [
+        {
+          "value": "Developed <b>real-time-multiplayer games</b> with high-quality regional content for Indian audiences. Tools like <b>Unity</b>, <b>TypeScript</b> & <b>Firebase</b> enabled faster-development cycles. Did four games. <b>Shabd Khel</b> achieved <b>30k+</b> downloads and <b>D1 retention of 51%</b>."
+        }
+      ]
+    },
+    {
+      "title": "SE & SSE",
+      "company": "Moonfrog Labs",
+      "companyUrl": "https://www.moonfroglabs.com",
+      "date": "11/2016 - 05/2018",
+      "details": [
+        {
+          "value": "Worked <b>full-stack</b>, developed <b>microservices-based-ecosystems</b> for <b>real-time-multiplayer-platforms</b> offering a wide genre of games. <b>Technologies</b>: <b>Cocos-2d</b>, <b>C++</b>, <b>NodeJS</b>, <b>TypeScript</b>, <b>AWS</b>, <b>GCP</b>, <b>S3</b>, <b>MongoDB</b>, <b>CouchDB</b>, <b>Redis</b>, <b>RabbitMQ</b>, <b>Kafka</b>, <b>Redshift</b>, <b>Zookeeper</b> etc."
+        }
+      ],
+      "achievements": [
+        "<b>Led small-to-medium size teams</b> on numerous games-and-features like <b>Rummy</b>, Teen-Patti, <b>Poker</b>, LAN-gameplay etc.",
+        "<b>Drove</b> HLD, LLD, task-planning, documentation, execution, integration, testing (<b>80+% coverage</b>), review, delivery & automation.",
+        "<b>Experimented</b> on <b>monetization</b>, <b>engagement</b> and <b>retention</b> working along <b>product-owners</b>.",
+        "<b>Took interviews and mentored</b> devs.",
+        "<b>Total-efforts</b> led to the <b>growth</b> of game <b>DAU</b> by <b>5x, to about 5 million</b> and <b>revenue</b> by <b>2x</b>."
+      ]
+    },
+    {
+      "title": "SDE",
+      "company": "Amazon",
+      "companyUrl": "https://amazon.com",
+      "date": "05/2015 - 10/2016",
+      "details": [
+        {
+          "value": "Member of the TFS-<b>backend</b>-team, responsible for financial-operations of Amazon-worldwide-transportation. <b>Technologies</b>: <b>Java</b>, <b>JavaScript</b>, <b>AWS</b>, <b>Oracle-RDB</b>, <b>DynamoDB</b>, <b>SQS</b>, <b>SNS</b>, <b>SWF</b>, <b>Redshift</b>, <b>Lambda</b>, <b>S3</b>, <b>Data-Pipelines</b>, etc."
+        }
+      ],
+      "achievements": [
+        "<b>Re-architected</b> for <b>scale</b> and <b>owned</b> Import-Fee-Duty-(IFD)-Refund-service (processed about <b>$1 million worth IFD per day</b>).",
+        "Contributed to various <b>high-business/customer-impact</b> initiatives and projects with <b>>90% test-code-coverage.</b>"
+      ]
+    },
+    {
+      "title": "Other Summarized Work Experience",
+      "achievements": [
+        "<a href='https://www.cityflo.com' target='_blank' rel='noopener noreferrer'><b>CityFlo</b></a> <b>[cityflo.com], 04/2015</b>: <b>Developed</b> the <b>initial stack</b>, route planning, ticket booking & real-time vehicle location tracking.",
+        "<a href='https://amazon.com' target='_blank' rel='noopener noreferrer'><b>Amazon</b></a> <b>[amazon.com], 05/2014</b>: Team- Inbound Shipment Planning. Developed REST-APIs for inbound platform features."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B. Tech. in Computer-Science-and-Engineering",
+      "institution": "Indian Institute of Technology (IIT), Patna",
+      "institutionUrl": "https://www.iitp.ac.in/",
+      "date": "May 2015",
+      "details": "<b>CGPA: 8.81/10</b>"
+    },
+    {
+      "degree": "Intermediate",
+      "institution": "St. Andrew’s Public School, Agra",
+      "institutionUrl": "http://www.standrewspublicschool.com/",
+      "date": "May 2011",
+      "details": "(CBSE Board) <b>Percentage: 84%</b>"
+    },
+    {
+      "degree": "Matriculation",
+      "institution": "St. Peter’s College, Agra",
+      "institutionUrl": "http://www.stpetersagra.org/",
+      "date": "May 2009",
+      "details": "(ICSE Board) <b>Percentage: 91.4%</b>"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Distributed Algorithm for Robust and Interference Free Topology in Cognitive Radio Networks.",
+      "links": [
+        { "name": "ACM MobiHoc 2017", "url": "https://goo.gl/rNCQxn" },
+        { "name": "PDF", "url": "https://goo.gl/xh6mMR" }
+      ]
+    },
+    {
+      "title": "Road congestion sensing via crowdsourcing and MapReduce.",
+      "links": [
+        { "name": "ACM IPSN 2015", "url": "https://goo.gl/hCGAke" },
+        { "name": "PDF", "url": "https://goo.gl/CDM3S6" }
+      ]
+    },
+    {
+      "title": "Smartphone sensing for large dataset collection of potholes.",
+      "links": [
+        { "name": "ACM MobiSys 2013", "url": "https://goo.gl/WvT6gw" },
+        { "name": "PDF", "url": "http://goo.gl/HGPqnZ" },
+        { "name": "GitHub", "url": "http://goo.gl/yjnNIs" }
+      ]
+    },
+    {
+      "title": "Product - FARM. Product functionality, attributes, and rules management system.",
+      "links": [
+        { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/product-farm" }
+      ]
+    },
+    {
+      "title": "Payments System and General Ledger. Payments, subscriptions, refunds, settlements, integrations & ledger.",
+      "links": [
+        { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/product-farm" }
+      ]
+    },
+    {
+      "title": "Virtual stock exchange - Stock Mart. Real-time-multiplayer game based on real-world and Monte-Carlo matching engines.",
+      "links": [
+        { "name": "GitHub", "url": "http://goo.gl/z3i4wU" }
+      ]
+    },
+    {
+      "title": "Particle simulation engine - Spark Apocalypse. Finished <b>first among 2000+ participants</b> in DreamWorks hackathon.",
+      "links": [
+        { "name": "GitHub", "url": "http://goo.gl/Vte6js" }
+      ]
+    },
+    {
+      "title": "Alligator inspired quadruped robot. Implemented gaits including turning gaits and obstacle-detection-based switching.",
+      "links": [
+        { "name": "GitHub", "url": "http://goo.gl/RztkyE" }
+      ]
+    },
+    {
+      "title": "Animating LEDs to the rhythm of music - Colorful Sound. Based on FFT for feature extraction and beat detection.",
+      "links": [
+        { "name": "GitHub", "url": "http://goo.gl/hgFYpr" }
+      ]
+    }
+  ],
+  "awards": [
+    "<b>Top interviewer of the month</b> (2021)<b>:</b> Got iPhone as an award for being the top interviewer of the month in Navi Technologies.",
+    "<b>Recognition for swift development of the Navi Health Insurance App</b> (2020)<b>:</b> Got an appreciation note from <a href='https://www.linkedin.com/in/sachinbansal' target='_blank' rel='noopener noreferrer'>Sachin Bansal</a>.",
+    "<b>Recognition for outstanding leadership on the Poker and Rummy project</b> (2018)<b>:</b> Contribution at Moonfrog Labs.",
+    "<b>Coordinator of Computer Science Club</b> (2013-14)<b>:</b> Prepared students for coding contests like ACM ICPC, Google Code Jam, etc.",
+    "<b>9th Position, National Hacking Contest</b> (2014)<b>:</b> Stood 9th in Microsoft HackCon 2014, <b>among 239 teams from 50+ colleges.</b>"
+  ],
+  "skills": [
+    { "name": "C++" },
+    { "name": "Java" },
+    { "name": "Kotlin" },
+    { "name": "Android" },
+    { "name": "JS" },
+    { "name": "React" },
+    { "name": "Go" },
+    { "name": "C#" },
+    { "name": "Unity" },
+    { "name": "SQL" },
+    { "name": "AWS" },
+    { "name": "GCP" },
+    { "name": "Azure" },
+    { "name": "Unix" },
+    { "name": "Databases" },
+    { "name": "Queues" },
+    { "name": "Workflows" },
+    { "name": "Temporal" },
+    { "name": "LLMs" }
+  ],
+  "hobbies": "<b>Yoga</b>; <b>Guitar</b>; Chess; <b>Geopolitics</b>; <b>Science</b>; <b>History</b>; <b>Facts</b>; <b>Skating</b>; Swimming; Scuba; Traveling; <b>Cooking</b>; Painting; Movies"
+}

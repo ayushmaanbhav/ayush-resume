@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Jain | Leader, Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Warm Color Palette - Light Mode */
+            --bg-color: #FFFBF5;
+            --text-color: #4A4A4A;
+            --header-color: #2D2D2D;
+            --accent-color: #D97706; /* Amber 600 */
+            --subtle-bg-color: #F7F3EE;
+            --border-color: #EAE0D5;
+
+            /* Font Families */
+            --font-serif: 'Lora', serif;
+            --font-sans: 'Inter', sans-serif;
+        }
+
+        /* Dark Mode Palette */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1C1C1C;
+                --text-color: #D1D5DB; /* Cool Gray 300 */
+                --header-color: #F3F4F6; /* Cool Gray 100 */
+                --accent-color: #FBBF24; /* Amber 400 */
+                --subtle-bg-color: #2A2A2A;
+                --border-color: #3f3f3f;
+            }
+        }
+
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: var(--font-serif);
+            color: var(--header-color);
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: var(--header-color);
+            margin-bottom: 0.25rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        strong, b {
+            font-weight: 600;
+            color: var(--header-color);
+        }
+
+        /* Header Section */
+        .header-section {
+            text-align: left;
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .header-section .contact-info {
+            font-size: 0.95rem;
+            text-align: right;
+        }
+        
+        .header-section .contact-info p {
+            margin-bottom: 0.25rem;
+        }
+        .header-section .contact-info p:last-child {
+            margin-bottom: 0;
+        }
+
+        .header-section .hashtags {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+
+        /* Main Content Sections */
+        .resume-section {
+            margin-bottom: 3rem;
+        }
+
+        .job, .education-entry, .publication-entry, .award-entry {
+            margin-bottom: 2.5rem;
+        }
+        
+        .job:last-child, .education-entry:last-child, .publication-entry:last-child, .award-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header, .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 0.75rem;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .job-title span {
+            font-weight: 400;
+            color: var(--text-color);
+        }
+
+        .job-date {
+            font-weight: 600;
+            color: var(--accent-color);
+            white-space: nowrap;
+            margin-left: 1rem;
+        }
+
+        .job-details {
+            margin-top: 1rem;
+        }
+        
+        .job-meta {
+            background-color: var(--subtle-bg-color);
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+        }
+
+        .meta-item {
+            font-size: 0.95rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .meta-label {
+            font-weight: 600;
+            color: var(--header-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-color);
+        }
+
+        .meta-icon {
+            width: 16px;
+            height: 16px;
+            stroke-width: 2;
+        }
+        
+        .meta-content {
+            padding-left: 1.5rem; /* Indent content under label */
+        }
+
+        .achievements-list {
+            list-style-type: none;
+            padding-left: 1rem;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .achievements-list li {
+            position: relative;
+            margin-bottom: 1rem;
+            padding-left: 1.25rem;
+        }
+
+        .achievements-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: -2px;
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .achievements-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .skills-list {
+            background-color: var(--subtle-bg-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .publication-entry li, .award-entry li {
+            margin-bottom: 0.75rem;
+        }
+        
+        /* Tech Tags */
+        .tech-tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .tech-tag {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--border-color);
+            color: var(--header-color);
+            padding: 0.25rem 0.6rem;
+            border-radius: 1rem; /* pill shape */
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: default;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .tech-tag:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .tech-tag .info-icon {
+            margin-left: 0.4rem;
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+        }
+
+        .tech-tag:hover .info-icon {
+            opacity: 1;
+        }
+
+
+        /* Floating Navigation Mini-map */
+        .mini-map {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            z-index: 1000;
+        }
+
+        .map-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .map-label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: all 0.2s ease-in-out;
+            white-space: nowrap;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .map-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--border-color);
+            border-radius: 50%;
+            margin-left: 8px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .map-item:hover .map-label, .map-item.active .map-label {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .map-item:hover .map-dot, .map-item.active .map-dot {
+            background-color: var(--accent-color);
+            transform: scale(1.5);
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .mini-map {
+                right: 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                font-size: 15px;
+            }
+            .container {
+                padding: 3rem 1.5rem;
+            }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+
+            .header-section, .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header-section .contact-info {
+                text-align: left;
+                margin-top: 1rem;
+            }
+            .job-date {
+                margin-left: 0;
+                margin-top: 0.25rem;
+                background-color: var(--subtle-bg-color);
+                padding: 0.1rem 0.5rem;
+                border-radius: 4px;
+                font-size: 0.85rem;
+            }
+            
+            .mini-map {
+               display: none; /* Hide mini-map on mobile for cleaner view */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="mini-map">
+        <a href="#summary" class="map-item">
+            <span class="map-label">Summary</span>
+            <span class="map-dot"></span>
+        </a>
+        <a href="#experience" class="map-item">
+            <span class="map-label">Experience</span>
+            <span class="map-dot"></span>
+        </a>
+        <a href="#education" class="map-item">
+            <span class="map-label">Education</span>
+            <span class="map-dot"></span>
+        </a>
+        <a href="#publications" class="map-item">
+            <span class="map-label">Publications</span>
+            <span class="map-dot"></span>
+        </a>
+        <a href="#awards" class="map-item">
+            <span class="map-label">Awards</span>
+            <span class="map-dot"></span>
+        </a>
+        <a href="#skills" class="map-item">
+            <span class="map-label">Skills</span>
+            <span class="map-dot"></span>
+        </a>
+        <a href="#hobbies" class="map-item">
+            <span class="map-label">Hobbies</span>
+            <span class="map-dot"></span>
+        </a>
+    </nav>
+
+    <div class="container">
+        <header class="header-section">
+            <div>
+                <h1>Ayush Jain</h1>
+                <p>Leader, Architect</p>
+            </div>
+            <div class="contact-info">
+                <p><a href="tel://+918544130924">(+91) 8544130924</a></p>
+                <p><a href="mailto:ayushmaanbhav1008@gmail.com">ayushmaanbhav1008@gmail.com</a></p>
+                <p><a href="https://linkedin.com/in/ayusjain" target="_blank" rel="noopener noreferrer">linkedin.com/in/ayusjain</a></p>
+                <p class="hashtags">#Save-Paper #Relevant-Links-Included</p>
+            </div>
+        </header>
+
+        <main>
+            <section id="summary" class="resume-section">
+                <h2>Personal Summary</h2>
+                <p>Engineering leader with <b>10+ years</b> driving impactful product and technology outcomes across startups and MNCs. Delivered <b>intelligent, robust, resilient, secure and LLM-enabled systems</b>. Blend of generalist adaptability and deep specialist expertise, excelling in strategic, high‑impact roles. Proven record of leading cross‑functional initiatives that <b>accelerated technical and business growth</b>.</p>
+            </section>
+            
+            <hr style="border: 0; height: 1px; background: var(--border-color); margin: 3rem 0;">
+
+            <section id="experience" class="resume-section">
+                <h2>Work Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Senior Software Engineer at <span><a href="http://microsoft.com" target="_blank" rel="noopener noreferrer">Microsoft</a></span></h3>
+                        </div>
+                        <div class="job-date">03/2024 - Present</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                    Team
+                                </span>
+                                <div class="meta-content">Owned <b>M365 Copilot</b> and <b>M365 Office Home</b>, both Web and Native Apps.</div>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                                    Role
+                                </span>
+                                <div class="meta-content">Led the team on <b>M365 security initiatives</b>, strengthened <b>user data privacy</b>, and played a critical role in launching first-versions of M365 Copilot.</div>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    Technologies
+                                </span>
+                                <div class="meta-content tech-tags-container">
+                                    <span class="tech-tag" title="Microsoft's free, open-source developer platform">.NET<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Microsoft's cloud computing service">Azure<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="JavaScript library for building user interfaces">React<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Modern, object-oriented programming language">C#<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="High-performance general-purpose programming language">C++<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="achievements-list">
+                            <li><b>Product Launches & Innovation:</b> Launched <b>M365 Copilot</b> (a <b>top priority of Satya Nadella</b>), owning the backend and working cross-team for on-time delivery, growing to <b>1M MAU</b>. Launched M365 Copilot across all <b>sovereign clouds within 2 months</b> by leading a 2-dev team. Built an <b>OS-level Copilot voice-and-vision prototype</b> (inspired by Rewind.ai) for a Microsoft Hackathon.</li>
+                            <li><b>Privacy & Security Engineering:</b> Achieved <b>20% faster auth</b> by upgrading to secure protocols (PFT-PoP, OBO) and optimizing token caching. Led an 8-dev team to deliver <b>245 security tasks</b> in 2 months across 15 KPIs. <b>Fixed GDPR issues</b> and enhanced privacy safeguards in user-data flows.</li>
+                            <li><b>Operational Excellence:</b> <b>Lowered false alerts by 20%</b> and <b>on-call TAT by 50%</b> by revamping monitor logic. Improved documentation with 11 new technical video-docs. <b>Reduced setup time by 30%</b> by automating sovereign-cloud infra provisioning with ARM templates.</li>
+                            <li><b>Leadership & Mentorship:</b> <b>Hired and doubled the dev count to 80</b>. Mentored peers, resulting in <b>2 promotions</b>. Drove impactful discussions that increased <b>productivity by 10%</b>. Actively shaped Copilot’s use in my team and org, and improved <b>dev-productivity by 10%</b> by adding <b>AI-powered workflow bots</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Staff Product Engineer at <span><a href="https://www.lifease.in/" target="_blank" rel="noopener noreferrer">Lifease</a></span></h3>
+                        </div>
+                        <div class="job-date">08/2023 - 11/2023</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-meta">
+                             <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                                    Role
+                                </span>
+                                <div class="meta-content">Led the engineering team for Lifease, a hyperlocal e-commerce platform. <b>Hired, mentored, and led a 7-developer team</b>, fostering collaboration and ownership.</div>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    Technologies
+                                </span>
+                                <div class="meta-content tech-tags-container">
+                                    <span class="tech-tag" title="Microsoft's cloud computing service">Azure<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="JavaScript library for building user interfaces">ReactJS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Java framework for creating stand-alone, production-grade applications">Java-Springboot<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                         <ul class="achievements-list">
+                            <li><b>Launched the app and core modules</b> including orders, search, payments, communications, inventory, logistics, and customer support.</li>
+                            <li>Onboarded <b>3000+ sellers</b> in Bangalore and achieved an average daily order volume of <b>150+</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Product Engineer at <span><a href="https://verseisbetter.com/" target="_blank" rel="noopener noreferrer">VERSE</a></span></h3>
+                        </div>
+                        <div class="job-date">03/2023 - 07/2023</div>
+                    </div>
+                    <div class="job-details">
+                         <div class="job-meta">
+                             <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                                    Role
+                                </span>
+                                <div class="meta-content"><b>Co-created an AI-enabled social network</b> for influencers, investors & founders. <b>Set product vision</b> for a next-gen social platform combining WhatsApp with OpenAI intelligence.</div>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    Technologies
+                                </span>
+                                <div class="meta-content tech-tags-container">
+                                    <span class="tech-tag" title="Microsoft's cloud computing service">Azure<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="JavaScript library for building user interfaces">React<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="JavaScript runtime built on Chrome's V8 engine">NodeJS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="AI research and deployment company">OpenAI<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Cross-platform centralized messaging service">WhatsApp<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="achievements-list">
+                            <li>Developed and launched core features supporting curated introductions, summarizations, status updates, and <b>AI-driven conversation assistants</b>.</li>
+                            <li>Onboarded <b>20K users</b> and nurtured the platform's growth to <b>5k WAU</b> through active brainstorming and feedback.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Tech Lead at <span><a href="https://navi.com/" target="_blank" rel="noopener noreferrer">Navi Technologies</a></span></h3>
+                        </div>
+                        <div class="job-date">11/2020 - 11/2022</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-meta">
+                             <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                    Team
+                                </span>
+                                <div class="meta-content"><b>Insurance Engineering</b> & <b>CRM Engineering</b>.</div>
+                            </div>
+                             <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                                    Role
+                                </span>
+                                <div class="meta-content">Headed core engineering and product initiatives, leading the tech team from inception in technology strategy, execution, and team building. Drove full-stack engineering for a cloud-native CRM platform.</div>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    Technologies
+                                </span>
+                                <div class="meta-content tech-tags-container">
+                                    <span class="tech-tag" title="Mobile operating system">Android<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Cross-platform, statically typed programming language">Kotlin<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="High-level, object-oriented programming language">Java<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Java framework for stand-alone applications">SpringBoot<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="JavaScript library for building user interfaces">React<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's cloud computing platform">AWS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Google's mobile and web application development platform">Firebase<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Workflow and decision automation platform">Camunda<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Open-source relational database">Postgres<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="In-memory data structure store">Redis<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Distributed event streaming platform">Kafka<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Container orchestration system">Kubernetes<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="achievements-list">
+                            <li><b>Insurance:</b> Created <b>health insurance stack in under a month</b>. Launched <b>8+ products</b> handling <b>20k+ DAU</b> and <b>300+ daily purchases</b>.</li>
+                            <li><b>Leadership:</b> Led teams for <b>13+ major features</b>, conducted <b>270+ interviews</b>, mentored 8 engineers (<b>6 promoted</b>), and grew the team from <b>2 to 40</b>.</li>
+                            <li><b>Growth:</b> Drove payments integrations, <b>raising conversion by 5%</b>. <b>Reduced EMI drop-offs by 8%</b> and <b>boosted renewal conversions by 5%</b>. Improved overall <b>conversions by 10–60%</b> through experimentation.</li>
+                             <li><b>CRM:</b> Conceptualized and delivered a <b>ticket-management system</b> based on real-time chat and intelligent bot support, growing to handle <b>20k tickets a day</b>.</li>
+                            <li><b>Systems & Reliability:</b> Enabled <b>10x scalability with 20% infra cost reduction</b>. Strengthened system reliability with Resilience4j and achieved <b>80% test coverage</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Co-founder at <span><a href="https://enlite.in" target="_blank" rel="noopener noreferrer">Enlite</a></span></h3>
+                        </div>
+                        <div class="job-date">05/2020 - 10/2020</div>
+                    </div>
+                    <div class="job-details">
+                         <div class="job-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    Technologies
+                                </span>
+                                <div class="meta-content tech-tags-container">
+                                    <span class="tech-tag" title="JavaScript library for building user interfaces">React<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Syntactic superset of JavaScript with static typing">TypeScript<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Google's suite of cloud computing services">GCP<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Document-oriented NoSQL database">MongoDB<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's Simple Storage Service">S3<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Open-source web conferencing system">BigBlueButton<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Low-code platform for internal tools">ReTool<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="achievements-list">
+                            <li>Developed a <b>feature-rich solution for virtual-classes, exams and classroom-management</b>, focusing on bandwidth-optimisation and a smartphone-first approach.</li>
+                            <li><b>Minimalist, microservices-based-architecture</b> enabled highly competitive pricing.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">SSE at <span><a href="https://www.logward.com/" target="_blank" rel="noopener noreferrer">Logward</a> (<a href="https://www.leschaco.com/" target="_blank" rel="noopener noreferrer">Leschaco</a>)</span></h3>
+                        </div>
+                        <div class="job-date">05/2019 - 01/2020</div>
+                    </div>
+                    <div class="job-details">
+                         <div class="job-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    Technologies
+                                </span>
+                                <div class="meta-content tech-tags-container">
+                                    <span class="tech-tag" title="Modern, object-oriented programming language">C#<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="JavaScript library for building user interfaces">React<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="High-level, object-oriented programming language">Java<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's cloud computing platform">AWS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Workflow and decision automation platform">Camunda<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Service mesh solution">Consul<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="In-memory data structure store">Redis<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's Simple Queue Service">SQS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="achievements-list">
+                            <li>Worked on a flexible SCM system with freight-forwarder & control-tower models.</li>
+                            <li>Launched the first & last-leg (Germany-China) of <b>Ocean-Freight-FCL</b> with <b>80+% test-coverage-&-automation</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Co-founder at <span><a href="https://www.linkedin.com/company/fataka-games/about/" target="_blank" rel="noopener noreferrer">Fataka Games</a></span></h3>
+                        </div>
+                        <div class="job-date">05/2018 - 12/2018</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    Technologies
+                                </span>
+                                <div class="meta-content tech-tags-container">
+                                    <span class="tech-tag" title="Cross-platform game engine">Unity<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Syntactic superset of JavaScript with static typing">TypeScript<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Google's mobile and web application development platform">Firebase<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="achievements-list">
+                            <li>Developed <b>real-time-multiplayer games</b> with high-quality regional content for Indian audiences.</li>
+                            <li>Our game, <b>Shabd Khel</b>, achieved <b>30k+ downloads</b> and a D1 retention of <b>51%</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">SE & SSE at <span><a href="https://www.moonfroglabs.com" target="_blank" rel="noopener noreferrer">Moonfrog Labs</a></span></h3>
+                        </div>
+                        <div class="job-date">11/2016 - 05/2018</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-meta">
+                             <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                                    Role
+                                </span>
+                                <div class="meta-content">Worked as a <b>full-stack engineer</b> on a microservices-based platform for real-time multiplayer casino games. Led teams on features for Rummy, Teen-Patti, and Poker.</div>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    Technologies
+                                </span>
+                                <div class="meta-content tech-tags-container">
+                                    <span class="tech-tag" title="Open-source framework for building games">Cocos-2d<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="High-performance general-purpose programming language">C++<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="JavaScript runtime built on Chrome's V8 engine">NodeJS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Syntactic superset of JavaScript with static typing">TypeScript<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's cloud computing platform">AWS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Google's suite of cloud computing services">GCP<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Document-oriented NoSQL database">MongoDB<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="In-memory data structure store">Redis<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Open-source message broker">RabbitMQ<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Distributed event streaming platform">Kafka<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="achievements-list">
+                            <li>Drove HLD, LLD, task-planning, execution, and delivery with <b>80%+ test coverage</b>.</li>
+                            <li>Experimented on monetization, engagement, and retention with product owners.</li>
+                            <li>Total efforts led to the growth of game <b>DAU by 5x (to ~5 million)</b> and <b>revenue by 2x</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">SDE at <span><a href="https://amazon.com" target="_blank" rel="noopener noreferrer">Amazon</a></span></h3>
+                        </div>
+                        <div class="job-date">05/2015 - 10/2016</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="job-meta">
+                             <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                    Team
+                                </span>
+                                <div class="meta-content">Member of the TFS-backend-team, responsible for financial-operations of Amazon-worldwide-transportation.</div>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">
+                                    <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    Technologies
+                                </span>
+                                <div class="meta-content tech-tags-container">
+                                    <span class="tech-tag" title="High-level, object-oriented programming language">Java<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="High-level programming language">JavaScript<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's cloud computing platform">AWS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Oracle's relational database">Oracle-RDB<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's NoSQL database service">DynamoDB<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's Simple Queue Service">SQS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's Simple Workflow Service">SWF<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                    <span class="tech-tag" title="Amazon's serverless computing platform">Lambda<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="achievements-list">
+                            <li>Re-architected for scale and owned the <b>Import-Fee-Duty (IFD)-Refund-service</b>, which processed about <b>$1 million worth of IFD per day</b>.</li>
+                            <li>Contributed to various high-business/customer-impact initiatives with <b>>90% test code coverage</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                       <div class="job-header">
+                            <div>
+                                <h3 class="job-title">Other Summarized Work Experience</h3>
+                            </div>
+                        </div>
+                    <div class="job-details">
+                        <ul class="achievements-list">
+                            <li><a href="https://www.cityflo.com" target="_blank" rel="noopener noreferrer"><b>CityFlo</b></a><b>, 04/2015</b>: <b>Developed the initial stack</b>, route planning, ticket booking & real-time vehicle location tracking.</li>
+                            <li><a href="https://amazon.com" target="_blank" rel="noopener noreferrer"><b>Amazon</b></a><b>, 05/2014</b>: (Intern) Team Inbound Shipment Planning. Developed <b>REST-APIs</b> for inbound platform features.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <hr style="border: 0; height: 1px; background: var(--border-color); margin: 3rem 0;">
+
+            <section id="education" class="resume-section">
+                <h2>Formal Education</h2>
+                <div class="education-entry">
+                    <p><b>B. Tech.</b> in <b>Computer-Science-and-Engineering</b> from <a href="https://www.iitp.ac.in/" target="_blank" rel="noopener noreferrer"><b>Indian Institute of Technology (IIT), Patna</b></a>, May 2015. <b>CGPA: 8.81/10</b></p>
+                    <p>Intermediate from <a href="http://www.standrewspublicschool.com/" target="_blank" rel="noopener noreferrer">St. Andrew’s Public School, Agra</a>, May 2011. (CBSE Board) <b>Percentage: 84%</b></p>
+                    <p>Matriculation from <a href="http://www.stpetersagra.org/" target="_blank" rel="noopener noreferrer">St. Peter’s College, Agra</a>, May 2009. (ICSE Board) <b>Percentage: 91.4%</b></p>
+                </div>
+            </section>
+            
+            <hr style="border: 0; height: 1px; background: var(--border-color); margin: 3rem 0;">
+
+            <section id="publications" class="resume-section">
+                <h2>Publications and Open Source Contributions</h2>
+                <div class="publication-entry">
+                    <ul>
+                        <li><b>Distributed Algorithm for Robust and Interference Free Topology in Cognitive Radio Networks</b>. <i>[<a href="https://goo.gl/rNCQxn" target="_blank" rel="noopener noreferrer">ACM MobiHoc 2017</a>] [<a href="https://goo.gl/xh6mMR" target="_blank" rel="noopener noreferrer">PDF</a>]</i></li>
+                        <li><b>Road congestion sensing via crowdsourcing and MapReduce</b>. <i>[<a href="https://goo.gl/hCGAke" target="_blank" rel="noopener noreferrer">ACM IPSN 2015</a>] [<a href="https://goo.gl/CDM3S6" target="_blank" rel="noopener noreferrer">PDF</a>]</i></li>
+                        <li><b>Smartphone sensing for large dataset collection of potholes</b>. <i>[<a href="https://goo.gl/WvT6gw" target="_blank" rel="noopener noreferrer">ACM MobiSys 2013</a>] [<a href="http://goo.gl/HGPqnZ" target="_blank" rel="noopener noreferrer">PDF</a>] [<a href="http://goo.gl/yjnNIs" target="_blank" rel="noopener noreferrer">GitHub</a>]</i></li>
+                        <li><b>Product - FARM</b>. Product functionality, attributes, and rules management system. <i>[<a href="https://github.com/ayushmaanbhav/product-farm" target="_blank" rel="noopener noreferrer">GitHub</a>]</i></li>
+                        <li><b>Payments System</b> and <b>General Ledger</b>. Payments, subscriptions, refunds, settlements, integrations & ledger. <i>[<a href="https://github.com/ayushmaanbhav/product-farm" target="_blank" rel="noopener noreferrer">GitHub</a>]</i></li>
+                        <li><b>Virtual stock exchange - Stock Mart</b>. Real-time-multiplayer game based on real-world and Monte-Carlo matching engines. <i>[<a href="http://goo.gl/z3i4wU" target="_blank" rel="noopener noreferrer">GitHub</a>]</i></li>
+                        <li><b>Particle simulation engine - Spark Apocalypse</b>. Finished <b>first among 2000+ participants</b> in DreamWorks hackathon. <i>[<a href="http://goo.gl/Vte6js" target="_blank" rel="noopener noreferrer">GitHub</a>]</i></li>
+                        <li><b>Alligator inspired quadruped robot</b>. Implemented gaits including turning gaits and obstacle-detection-based switching. <i>[<a href="http://goo.gl/RztkyE" target="_blank" rel="noopener noreferrer">GitHub</a>]</i></li>
+                        <li><b>Animating LEDs to the rhythm of music - Colorful Sound</b>. Based on FFT for feature extraction and beat detection. <i>[<a href="http://goo.gl/hgFYpr" target="_blank" rel="noopener noreferrer">GitHub</a>]</i></li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr style="border: 0; height: 1px; background: var(--border-color); margin: 3rem 0;">
+            
+            <section id="awards" class="resume-section">
+                <h2>Additional Experience and Awards</h2>
+                <div class="award-entry">
+                    <ul>
+                        <li><b>Top interviewer of the month</b> (2021)<b>:</b> Got iPhone as an award for being the top interviewer of the month in Navi Technologies.</li>
+                        <li><b>Recognition for swift development of the Navi Health Insurance App</b> (2020)<b>:</b> Got an appreciation note from <a href="https://www.linkedin.com/in/sachinbansal" target="_blank" rel="noopener noreferrer">Sachin Bansal</a>.</li>
+                        <li><b>Recognition for outstanding leadership on the Poker and Rummy project</b> (2018)<b>:</b> Contribution at Moonfrog Labs.</li>
+                        <li><b>Coordinator of Computer Science Club</b> (2013-14)<b>:</b> Prepared students for coding contests like ACM ICPC, Google Code Jam, etc.</li>
+                        <li><b>9th Position, National Hacking Contest</b> (2014)<b>:</b> Stood 9th in Microsoft HackCon 2014, <b>among 239 teams from 50+ colleges.</b></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <hr style="border: 0; height: 1px; background: var(--border-color); margin: 3rem 0;">
+
+            <section id="skills" class="resume-section">
+                <h2>Languages and Technologies</h2>
+                <div class="skills-list">
+                    <div class="tech-tags-container">
+                        <span class="tech-tag" title="High-performance general-purpose programming language">C++<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="High-level, object-oriented programming language">Java<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Cross-platform, statically typed programming language">Kotlin<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Mobile operating system">Android<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="High-level programming language">JS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="JavaScript library for building user interfaces">React<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Statically typed programming language by Google">Go<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Modern, object-oriented programming language">C#<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Cross-platform game engine">Unity<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Language for managing relational databases">SQL<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Amazon's cloud computing platform">AWS<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Google's suite of cloud computing services">GCP<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Microsoft's cloud computing service">Azure<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Multitasking, multiuser computer operating systems">Unix<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Organized collection of data">Databases<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Data structure for managing ordered lists">Queues<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Orchestrated pattern of business activity">Workflows<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Durable execution system">Temporal<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                        <span class="tech-tag" title="Large Language Models (AI)">LLMs<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="hobbies" class="resume-section">
+                <h2>Other Skills and Hobbies</h2>
+                <div class="skills-list">
+                    <p><b>Yoga</b>; <b>Guitar</b>; Chess; <b>Geopolitics</b>; <b>Science</b>; <b>History</b>; <b>Facts</b>; <b>Skating</b>; Swimming; Scuba; Traveling; <b>Cooking</b>; Painting; Movies</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.resume-section');
+            const navItems = document.querySelectorAll('.mini-map .map-item');
+
+            if ('IntersectionObserver' in window) {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.4
+                };
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const id = entry.target.getAttribute('id');
+                            navItems.forEach(item => {
+                                item.classList.remove('active');
+                                if (item.getAttribute('href') === `#${id}`) {
+                                    item.classList.add('active');
+                                 }
+                            });
+                        }
+                    });
+                }, observerOptions);
+
+                sections.forEach(section => {
+                    observer.observe(section);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
