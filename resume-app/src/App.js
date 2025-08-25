@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import SpaceBackground from './components/SpaceBackground';
 import MiniMap from './components/MiniMap';
-import Header from './components/resume/Header';
 import Summary from './components/resume/Summary';
 import Experience from './components/resume/Experience';
 import Education from './components/resume/Education';
@@ -70,9 +69,8 @@ function App() {
       <SpaceBackground />
       <MiniMap refs={refs} minimap={minimap} />
       <div className="container">
-        <Header name={name} title={title} contact={contact} />
         <main>
-          <div ref={summaryRef} className="animate-on-scroll"><Summary summary={summary} /></div>
+          <div ref={summaryRef} className="animate-on-scroll"><Summary name={name} title={title} contact={contact} summary={summary} /></div>
           <hr style={{ border: '0', height: '1px', background: 'var(--border-color)', margin: '3rem 0' }} />
           <div ref={experienceRef} className="animate-on-scroll"><Experience experience={experience} /></div>
           <hr style={{ border: '0', height: '1px', background: 'var(--border-color)', margin: '3rem 0' }} />
