@@ -229,10 +229,15 @@ strong, b {
     margin-bottom: 0;
 }
 
-.skills-list {
-    background-color: var(--subtle-bg-color);
-    padding: 1.5rem;
-    border-radius: 8px;
+.skills-list, .hobbies-list {
+  background-color: var(--subtle-bg-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.hobby-bold {
+  font-weight: 600;
+  color: var(--header-color);
 }
 
 ul {
@@ -285,6 +290,43 @@ ul {
     opacity: 1;
 }
 
+/* Hobby Tags */
+.hobby-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.hobby-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--border-color);
+    color: var(--header-color);
+    padding: 0.25rem 0.6rem;
+    border-radius: 1rem; /* pill shape */
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: default;
+    transition: all 0.2s ease-in-out;
+}
+
+.hobby-tag:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hobby-icon {
+    margin-right: 0.4rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.hobby-tag:hover .hobby-icon {
+    opacity: 1;
+}
 
 /* Floating Navigation Mini-map */
 .mini-map {
