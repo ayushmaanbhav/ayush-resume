@@ -4,7 +4,7 @@ const Experience = ({ experience }) => (
   <section id="experience" className="resume-section">
     <h2>Work Experience</h2>
     {experience.map((job, index) => (
-      <div className="job" key={index}>
+      <div className="job animate-on-scroll" key={index}>
         <div className="job-header">
           <div>
             <h3 className="job-title">

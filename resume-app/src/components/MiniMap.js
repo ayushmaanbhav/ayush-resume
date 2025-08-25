@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const MiniMap = () => {
+const MiniMap = ({ refs, minimap }) => {
     useEffect(() => {
         const sections = document.querySelectorAll('.resume-section');
         const navItems = document.querySelectorAll('.mini-map .map-item');
@@ -20,7 +20,7 @@ const MiniMap = () => {
                             item.classList.remove('active');
                             if (item.getAttribute('href') === `#${id}`) {
                                 item.classList.add('active');
-                             }
+                            }
                         });
                     }
                 });
@@ -32,36 +32,27 @@ const MiniMap = () => {
         }
     }, []);
 
+    const handleClick = (e, ref) => {
+        e.preventDefault();
+        ref.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    };
+
     return (
         <nav className="mini-map">
-            <a href="#summary" className="map-item">
-                <span className="map-label">Summary</span>
-                <span className="map-dot"></span>
-            </a>
-            <a href="#experience" className="map-item">
-                <span className="map-label">Experience</span>
-                <span className="map-dot"></span>
-            </a>
-            <a href="#education" className="map-item">
-                <span className="map-label">Education</span>
-                <span className="map-dot"></span>
-            </a>
-            <a href="#publications" className="map-item">
-                <span className="map-label">Publications</span>
-                <span className="map-dot"></span>
-            </a>
-            <a href="#awards" className="map-item">
-                <span className="map-label">Awards</span>
-                <span className="map-dot"></span>
-            </a>
-            <a href="#skills" className="map-item">
-                <span className="map-label">Skills</span>
-                <span className="map-dot"></span>
-            </a>
-            <a href="#hobbies" className="map-item">
-                <span className="map-label">Hobbies</span>
-                <span className="map-dot"></span>
-            </a>
+            {minimap && minimap.map(item => (
+                <a
+                    key={item.refName}
+                    href={`#${item.refName}`}
+                    className="map-item"
+                    onClick={(e) => handleClick(e, refs[item.refName])}
+                >
+                    <span className="map-label">{item.label}</span>
+                    <span className="map-dot"></span>
+                </a>
+            ))}
         </nav>
     );
 };

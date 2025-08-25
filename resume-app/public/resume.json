@@ -9,6 +9,15 @@
     "hashtags": "#Save-Paper #Relevant-Links-Included"
   },
   "summary": "Engineering leader with <b>10+ years</b> driving impactful product and technology outcomes across startups and MNCs. Delivered <b>intelligent, robust, resilient, secure and LLM-enabled systems</b>. Blend of generalist adaptability and deep specialist expertise, excelling in strategic, high‑impact roles. Proven record of leading cross‑functional initiatives that accelerated technical and business growth.",
+  "minimap": [
+    { "refName": "summary", "label": "Summary" },
+    { "refName": "experience", "label": "Experience" },
+    { "refName": "education", "label": "Education" },
+    { "refName": "publications", "label": "Publications" },
+    { "refName": "awards", "label": "Awards" },
+    { "refName": "skills", "label": "Skills" },
+    { "refName": "hobbies", "label": "Hobbies" }
+  ],
   "experience": [
     {
       "title": "Senior Software Engineer",
@@ -195,21 +204,27 @@
       "institution": "Indian Institute of Technology (IIT), Patna",
       "institutionUrl": "https://www.iitp.ac.in/",
       "date": "May 2015",
-      "details": "<b>CGPA: 8.81/10</b>"
+      "details": "<b>Cumulative GPA: 8.81/10</b>",
+      "cgpa": "8.81",
+      "watermark": "Graduation"
     },
     {
       "degree": "Intermediate",
       "institution": "St. Andrew’s Public School, Agra",
       "institutionUrl": "http://www.standrewspublicschool.com/",
       "date": "May 2011",
-      "details": "(CBSE Board) <b>Percentage: 84%</b>"
+      "details": "(CBSE Board) <b>Percentage: 84%</b>",
+      "percentage": "84",
+      "watermark": "Intermediate"
     },
     {
       "degree": "Matriculation",
       "institution": "St. Peter’s College, Agra",
       "institutionUrl": "http://www.stpetersagra.org/",
       "date": "May 2009",
-      "details": "(ICSE Board) <b>Percentage: 91.4%</b>"
+      "details": "(ICSE Board) <b>Percentage: 91.4%</b>",
+      "percentage": "91.4",
+      "watermark": "High School"
     }
   ],
   "publications": [
