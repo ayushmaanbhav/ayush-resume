@@ -262,7 +262,7 @@ ul { list-style-type: none; padding-left: 0; }
 
 .name-container { position: relative; display: inline-block; }
 .name-char { display: inline-block; animation: float-char 5s ease-in-out infinite; transform: translateY(var(--y-offset)); }
-.name-char-large { font-size: 1.5em; }
+.name-char-large { font-size: 2em; }
 @keyframes float-char { 
     0%, 100% { transform: translateY(var(--y-offset)); } 
     50% { transform: translateY(calc(var(--y-offset) - 10px)); } 
@@ -425,4 +425,66 @@ ul { list-style-type: none; padding-left: 0; }
     .header-section, .job-header { flex-direction: column; align-items: flex-start; }
     .header-section .contact-info { text-align: left; margin-top: 1rem; }
     .job-date { margin-left: 0; margin-top: 0.25rem; }
+}
+
+/* Navigation Sidebar Styles */
+.navigation-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.navigation-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.navigation-sidebar li a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--border-color);
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navigation-sidebar li a:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.5);
+}
+
+.navigation-sidebar li a.active {
+    background-color: var(--chandan-color);
+    transform: scale(1.8);
+    box-shadow: 0 0 10px var(--chandan-color);
+}
+
+.navigation-sidebar li a span {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    background-color: var(--subtle-bg-color);
+    color: var(--header-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.navigation-sidebar li a:hover span {
+    opacity: 1;
+    visibility: visible;
+    right: 30px;
 }

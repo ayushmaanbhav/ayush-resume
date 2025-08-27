@@ -9,20 +9,30 @@ const Summary = ({ data }) => {
         if (nameEl) {
             const nameText = nameEl.textContent;
             nameEl.innerHTML = '';
+            let lastOffset = 0;
             nameText.split('').forEach((char, i) => {
                 const span = document.createElement('span');
-                span.textContent = char;
+                if (char === ' ') {
+                    span.innerHTML = '&nbsp;';
+                } else {
+                    span.textContent = char;
+                }
                 span.classList.add('name-char');
                 if (char === 'A' || char === 'J') {
                     span.classList.add('name-char-large');
                 }
-                span.style.setProperty('--y-offset', `${Math.random() * 16 - 8}px`);
+                
+                let newOffset = lastOffset + (Math.random() * 16 - 8);
+                newOffset = Math.max(-8, Math.min(8, newOffset));
+                
+                span.style.setProperty('--y-offset', `${newOffset}px`);
                 span.style.animationDelay = `${i * 0.1}s`;
                 nameEl.appendChild(span);
+                lastOffset = newOffset;
             });
         }
 
-        const nameContainer = document.querySelector('.name-container');
+        /*const nameContainer = document.querySelector('.name-container');
         if (nameContainer) {
             for (let i = 0; i < 8; i++) {
                 const star = document.createElement('span');
@@ -31,7 +41,7 @@ const Summary = ({ data }) => {
                 star.style.animationDelay = `${i * 0.5}s`;
                 nameContainer.appendChild(star);
             }
-        }
+        }*/
 
         const sparksContainer = document.querySelector('.sparks');
         if (sparksContainer) {
