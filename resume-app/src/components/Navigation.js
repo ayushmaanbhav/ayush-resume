@@ -5,6 +5,8 @@ const Navigation = ({ activeSection }) => {
         { id: 'summary', label: 'Summary' },
         { id: 'experience', label: 'Experience' },
         { id: 'education', label: 'Education' },
+        { id: 'publications', label: 'Publications' },
+        { id: 'awards', label: 'Awards' },
         { id: 'skills', label: 'Skills' },
         { id: 'hobbies', label: 'Hobbies' },
         { id: 'ai-tool', label: 'AI Assistant' }

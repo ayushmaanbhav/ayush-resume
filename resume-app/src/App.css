@@ -512,3 +512,32 @@ ul { list-style-type: none; padding-left: 0; }
         box-shadow: 0 0 30px var(--chandan-color), 0 0 10px var(--accent-color);
     }
 }
+
+.publication-list, .awards-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.publication-entry, .award-entry {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--subtle-bg-color);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.publication-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.publication-links {
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+.publication-links a {
+    margin-right: 1rem;
+    font-weight: 600;
+}

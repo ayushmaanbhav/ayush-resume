@@ -3,12 +3,12 @@
         "name": "Ayush Jain",
         "title": "Leader, Architect",
         "contact": {
-            "phone": "",
-            "email": "",
+            "phone": "+918544130924",
+            "email": "ayushmaanbhav1008@gmail.com",
             "linkedin": "linkedin.com/in/ayusjain"
         },
         "hashtags": "#Save-Paper #Relevant-Links-Included",
-        "personalSummary": "Engineering leader with 10+ years driving impactful product and technology outcomes across startups and MNCs. Delivered intelligent, robust, resilient, secure and LLM-enabled systems. Blend of generalist adaptability and deep specialist expertise, excelling in strategic, high‑impact roles. Proven record of leading cross‑functional initiatives that accelerated technical and business growth."
+        "personalSummary": "Engineering leader with <span class=\"burning-highlight\">10+ years</span> driving impactful product and technology outcomes across startups and MNCs. Delivered <span class=\"burning-highlight\">intelligent, robust, resilient, secure and LLM-enabled systems</span>. Blend of generalist adaptability and deep specialist expertise, excelling in strategic, high‑impact roles. Proven record of leading cross‑functional initiatives that <span class=\"burning-highlight\">accelerated technical and business growth</span>."
     },
     "experience": [
         {
@@ -17,10 +17,10 @@
             "company_url": "http://microsoft.com",
             "date": "03/2024 - Present",
             "achievements": [
-                "Product Launches & Innovation: Launched M365 Copilot, growing to 1M MAU. Deployed to all sovereign clouds in 2 months.",
-                "Privacy & Security: Achieved 20% faster auth. Led team to deliver 245 security tasks and resolve GDPR issues.",
-                "Lowered false alerts by 20% and on-call TAT by 50%. Reduced setup time by 30% with automation.",
-                "Leadership: Doubled dev count to 80. Mentored for 2 promotions. Increased dev-productivity by 10% with AI bots."
+                "<span class=\"achievement-highlight\">Product Launches & Innovation:</span> Launched <strong>M365 Copilot</strong>, growing to <span class=\"achievement-highlight\">1M MAU</span>. Deployed to all sovereign clouds in 2 months.",
+                "<span class=\"achievement-highlight\">Privacy & Security:</span> Achieved <strong>20% faster auth</strong>. Led team to deliver <span class=\"achievement-highlight\">245 security tasks</span> and resolve GDPR issues.",
+                "<strong>Lowered false alerts by 20%</strong> and <strong>on-call TAT by 50%</strong>. Reduced setup time by 30% with automation.",
+                "<span class=\"achievement-highlight\">Leadership:</span> <strong>Doubled dev count to 80</strong>. Mentored for <strong>2 promotions</strong>. Increased <span class=\"achievement-highlight\">dev-productivity by 10%</span> with AI bots."
             ]
         },
         {
@@ -29,8 +29,8 @@
             "company_url": "https://in.linkedin.com/company/lifease/",
             "date": "08/2023 - 11/2023",
             "achievements": [
-                "Leadership: Led, hired, and mentored a 7-developer team for a hyperlocal e-commerce platform.",
-                "Launch & Growth: Launched app and core modules, onboarding 3000+ sellers and achieving 150+ daily orders."
+                "<span class=\"achievement-highlight\">Leadership:</span> Led, hired, and mentored a <strong>7-developer team</strong> for a hyperlocal e-commerce platform.",
+                "<span class=\"achievement-highlight\">Launch & Growth:</span> Launched app and core modules, onboarding <strong>3000+ sellers</strong> and achieving <strong>150+ daily orders</strong>."
             ]
         },
         {
@@ -39,8 +39,8 @@
             "company_url": "https://verseisbetter.com/",
             "date": "03/2023 - 07/2023",
             "achievements": [
-                "Product Vision: Co-created an AI-enabled social network, setting the product vision.",
-                "Feature Development: Launched features with AI-driven conversation assistants, growing to 20K users and 5k WAU."
+                "<span class=\"achievement-highlight\">Product Vision:</span> Co-created an <strong>AI-enabled social network</strong>, setting the product vision.",
+                "<span class=\"achievement-highlight\">Feature Development:</span> Launched features with <strong>AI-driven conversation assistants</strong>, growing to <strong>20K users</strong> and <strong>5k WAU</strong>."
             ]
         },
         {
@@ -49,11 +49,11 @@
             "company_url": "https://navi.com/",
             "date": "11/2020 - 11/2022",
             "achievements": [
-                "Insurance Tech: Built health insurance stack in under a month. Launched 8+ products handling 20k+ DAU.",
-                "Team Leadership: Grew team from 2 to 40, conducted 270+ interviews, and mentored 8 engineers (6 promoted).",
-                "Product Growth: Increased payment conversions by 5-8% and overall funnels by 10-60%.",
-                "CRM Platform: Built a ticket-management system to handle 20k tickets a day.",
-                "System Architecture: Enabled 10x scalability with 20% infra cost reduction and achieved 80% test coverage."
+                "<span class=\"achievement-highlight\">Insurance Tech:</span> Built <strong>health insurance stack in under a month</strong>. Launched <strong>8+ products</strong> handling <strong>20k+ DAU</strong>.",
+                "<span class=\"achievement-highlight\">Team Leadership:</span> Grew team from <strong>2 to 40</strong>, conducted <strong>270+ interviews</strong>, and mentored 8 engineers (<strong>6 promoted</strong>).",
+                "<span class=\"achievement-highlight\">Product Growth:</span> Increased payment <strong>conversions by 5-8%</strong> and overall funnels by <strong>10-60%</strong>.",
+                "<span class=\"achievement-highlight\">CRM Platform:</span> Built a ticket-management system to handle <strong>20k tickets a day</strong>.",
+                "<span class=\"achievement-highlight\">System Architecture:</span> Enabled <strong>10x scalability</strong> with <strong>20% infra cost reduction</strong> and achieved <strong>80% test coverage</strong>."
             ]
         },
         {
@@ -71,7 +71,7 @@
             "company_url": "https://www.logward.com/",
             "date": "05/2019 - 01/2020",
             "achievements": [
-                "Launched Ocean-Freight-FCL with 80%+ test coverage."
+                "Launched Ocean-Freight-FCL with <strong>80%+ test coverage</strong>."
             ]
         },
         {
@@ -80,7 +80,7 @@
             "company_url": "https://www.linkedin.com/company/fataka-games/about/",
             "date": "05/2018 - 12/2018",
             "achievements": [
-                "Developed real-time multiplayer games; one achieved 30k+ downloads and 51% D1 retention."
+                "Developed real-time multiplayer games; one achieved <strong>30k+ downloads</strong> and <span class=\"achievement-highlight\">51% D1 retention</span>."
             ]
         },
         {
@@ -90,7 +90,7 @@
             "date": "11/2016 - 05/2018",
             "achievements": [
                 "Full-stack on a real-time multiplayer platform.",
-                "Efforts led to 5x DAU growth (to ~5 million) and 2x revenue."
+                "Efforts led to <span class=\"achievement-highlight\">5x DAU growth</span> (to ~5 million) and <span class=\"achievement-highlight\">2x revenue</span>."
             ]
         },
         {
@@ -99,7 +99,7 @@
             "company_url": "https://amazon.com",
             "date": "05/2015 - 10/2016",
             "achievements": [
-                "Owned a service processing $1 million in refunds daily with >90% test coverage."
+                "Owned a service processing <span class=\"achievement-highlight\">$1 million in refunds daily</span> with <strong>>90% test coverage</strong>."
             ]
         }
     ],
@@ -151,6 +151,73 @@
                 "Yoga Awards"
             ]
         }
+    ],
+    "publications": [
+        {
+            "title": "<span class=\"achievement-highlight\">Distributed Algorithm</span> for Robust and Interference Free Topology in Cognitive Radio Networks",
+            "links": [
+                { "name": "ACM MobiHoc 2017", "url": "https://goo.gl/rNCQxn" },
+                { "name": "PDF", "url": "https://goo.gl/xh6mMR" }
+            ]
+        },
+        {
+            "title": "<span class=\"achievement-highlight\">Road congestion sensing</span> via crowdsourcing and MapReduce",
+            "links": [
+                { "name": "ACM IPSN 2015", "url": "https://goo.gl/hCGAke" },
+                { "name": "PDF", "url": "https://goo.gl/CDM3S6" }
+            ]
+        },
+        {
+            "title": "<span class=\"achievement-highlight\">Smartphone sensing</span> for large dataset collection of potholes",
+            "links": [
+                { "name": "ACM MobiSys 2013", "url": "https://goo.gl/WvT6gw" },
+                { "name": "PDF", "url": "http://goo.gl/HGPqnZ" },
+                { "name": "GitHub", "url": "http://goo.gl/yjnNIs" }
+            ]
+        },
+        {
+            "title": "<span class=\"achievement-highlight\">Product - FARM</span>",
+            "links": [
+                { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/product-farm" }
+            ]
+        },
+        {
+            "title": "<span class=\"achievement-highlight\">Payments System</span> and General Ledger",
+            "links": [
+                { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/product-farm" }
+            ]
+        },
+        {
+            "title": "Virtual stock exchange - <span class=\"achievement-highlight\">Stock Mart</span>",
+            "links": [
+                { "name": "GitHub", "url": "http://goo.gl/z3i4wU" }
+            ]
+        },
+        {
+            "title": "Particle simulation engine - <span class=\"achievement-highlight\">Spark Apocalypse</span>",
+            "links": [
+                { "name": "GitHub", "url": "http://goo.gl/Vte6js" }
+            ]
+        },
+        {
+            "title": "<span class=\"achievement-highlight\">Alligator inspired</span> quadruped robot",
+            "links": [
+                { "name": "GitHub", "url": "http://goo.gl/RztkyE" }
+            ]
+        },
+        {
+            "title": "Animating LEDs to the rhythm of music - <span class=\"achievement-highlight\">Colorful Sound</span>",
+            "links": [
+                { "name": "GitHub", "url": "http://goo.gl/hgFYpr" }
+            ]
+        }
+    ],
+    "awards": [
+        "<span class=\"achievement-highlight\">Top interviewer of the month</span> (2021): Got iPhone as an award in Navi Technologies.",
+        "Recognition for <span class=\"achievement-highlight\">swift development</span> of the Navi Health Insurance App (2020): Got an appreciation note from Sachin Bansal.",
+        "Recognition for <span class=\"achievement-highlight\">outstanding leadership</span> on the Poker and Rummy project (2018): Contribution at Moonfrog Labs.",
+        "<span class=\"achievement-highlight\">Coordinator of Computer Science Club</span> (2013-14): Prepared students for coding contests, won many.",
+        "<span class=\"achievement-highlight\">9th Position, National Hacking Contest</span> (2014): Stood 9th in Microsoft HackCon 2014."
     ],
     "skills": [
         "C++", "Java", "Kotlin", "Android", "JS", "React", "Go", "C#", "Unity", "SQL", "AWS", "GCP", "Azure", "Unix", "Databases", "Queues", "Workflows", "Temporal", "LLMs"

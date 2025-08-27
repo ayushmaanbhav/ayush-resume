@@ -80,7 +80,7 @@ const Summary = ({ data }) => {
                     </div>
                 </header>
                 <h2>Personal Summary</h2>
-                <p dangerouslySetInnerHTML={{ __html: personalSummary.replace(/(\d+\+? years|intelligent, robust, resilient, secure and LLM-enabled systems|accelerated technical and business growth)/g, '<span class="burning-highlight">$1</span>') }}></p>
+                <p dangerouslySetInnerHTML={{ __html: personalSummary }}></p>
             </div>
         </section>
     );

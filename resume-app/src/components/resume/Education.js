@@ -13,15 +13,6 @@ const Education = ({ data }) => {
         return stars;
     };
 
-    const badgeEmoticons = {
-        "Gold Medalist": "🥇",
-        "University Topper": "🏆",
-        "Research Publication": "🔬",
-        "Secured 2nd Position": "🥈",
-        "Got 92%tile": "📈",
-        "Among top 10%": "🌟"
-    };
-
     return (
         <section id="education" className="page-section">
             <div className="scrollable-content-wrapper">
@@ -47,7 +38,7 @@ const Education = ({ data }) => {
                                 <div className="badge-container">
                                     {edu.badges.map((badge, i) => (
                                         <div className="badge" key={i}>
-                                            <span className="tooltip">{badgeEmoticons[badge] || '🎖️'} {badge}</span>
+                                            <span className="tooltip">🎖️ {badge}</span>
                                         </div>
                                     ))}
                                 </div>

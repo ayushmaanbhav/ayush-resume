@@ -7,6 +7,8 @@ import Experience from './components/resume/Experience';
 import Education from './components/resume/Education';
 import Skills from './components/resume/Skills';
 import Hobbies from './components/resume/Hobbies';
+import Publications from './components/resume/Publications';
+import Awards from './components/resume/Awards';
 import AIAssistant from './components/resume/AIAssistant';
 import Navigation from './components/Navigation';
 
@@ -54,6 +56,8 @@ function App() {
                         <Summary data={resumeData.summary} />
                         <Experience data={resumeData.experience} />
                         <Education data={resumeData.education} />
+                        <Publications data={resumeData.publications} />
+                        <Awards data={resumeData.awards} />
                         <Skills data={resumeData.skills} />
                         <Hobbies data={resumeData.hobbies} />
                         <AIAssistant resumeData={resumeData} />

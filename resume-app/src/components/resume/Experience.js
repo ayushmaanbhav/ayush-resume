@@ -71,7 +71,7 @@ const Experience = ({ data }) => {
                             <div className="item-content">
                                 <ul className="achievements-list">
                                     {job.achievements.map((achievement, i) => (
-                                        <li key={i} dangerouslySetInnerHTML={{ __html: achievement.replace(/(Product Launches & Innovation:|Privacy & Security:|Leadership:|Launch & Growth:|Product Vision:|Feature Development:|Insurance Tech:|Team Leadership:|Product Growth:|CRM Platform:|System Architecture:)/g, '<span class="achievement-highlight">$1</span>') }}></li>
+                                        <li key={i} dangerouslySetInnerHTML={{ __html: achievement }}></li>
                                     ))}
                                 </ul>
                             </div>
