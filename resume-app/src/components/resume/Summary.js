@@ -60,13 +60,16 @@ const Summary = ({ data }) => {
         <section id="summary" className="page-section">
             <div className="container">
                 <header className="header-section">
-                    <div>
-                        <div className="name-container">
-                            <h1><span id="name-animate">{name}</span></h1>
-                        </div>
-                        <div className="magic-wand-container">
-                            <div className="sparks"></div>
-                            <p><span className="burning-highlight">{title}</span></p>
+                    <div className="header-main">
+                        <img src="/ayush.png" alt="Ayush Jain" className="profile-pic" />
+                        <div>
+                            <div className="name-container">
+                                <h1><span id="name-animate">{name}</span></h1>
+                            </div>
+                            <div className="magic-wand-container">
+                                <div className="sparks"></div>
+                                <p><span className="burning-highlight">{title}</span></p>
+                            </div>
                         </div>
                     </div>
                     <div className="contact-info">
