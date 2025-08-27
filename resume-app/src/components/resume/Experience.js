@@ -1,61 +1,93 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import TimelinePopup from './TimelinePopup';
 
-const Experience = ({ experience }) => (
-  <section id="experience" className="resume-section">
-    <h2>Work Experience</h2>
-    {experience.map((job, index) => (
-      <div className="job animate-on-scroll" key={index}>
-        <div className="job-header">
-          <div>
-            <h3 className="job-title">
-              {job.title} at <span><a href={job.companyUrl} target="_blank" rel="noopener noreferrer">{job.company}</a>
-              {job.companySubtitle && ` (${job.companySubtitle})`}</span>
-            </h3>
-          </div>
-          <div className="job-date">{job.date}</div>
-        </div>
-        <div className="job-details">
-          {job.details && job.details.length > 0 && (
-            <div className="job-meta">
-              {job.details.map((detail, i) => (
-                <div className="meta-item" key={i}>
-                  <span className="meta-label">
-                    {/* You can add icons here based on detail.label */}
-                    {detail.label}
-                  </span>
-                  <div className="meta-content" dangerouslySetInnerHTML={{ __html: detail.value }} />
-                </div>
-              ))}
-            </div>
-          )}
-          {job.technologies && job.technologies.length > 0 && (
-              <div className="job-meta">
-                <div className="meta-item">
-                  <span className="meta-label">
-                    Technologies
-                  </span>
-                  <div className="meta-content tech-tags-container">
-                    {job.technologies.map((tech, i) => (
-                      <span key={i} className="tech-tag" title={tech.title}>
-                        {tech.name}
-                        <svg className="info-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-                      </span>
+const Experience = ({ data }) => {
+    const [isPopupVisible, setPopupVisible] = useState(false);
+    const [highlightIndex, setHighlightIndex] = useState(0);
+
+    const showTimelinePopup = (index) => {
+        setHighlightIndex(index);
+        setPopupVisible(true);
+    };
+
+    const hideTimelinePopup = () => {
+        setPopupVisible(false);
+    };
+
+    const handleTimelineSelect = (index) => {
+        hideTimelinePopup();
+        const jobElement = document.getElementById(`job-${index}`);
+        if (jobElement) {
+            // Use a timeout to ensure the popup is gone before scrolling
+            setTimeout(() => {
+                jobElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+        }
+    };
+
+    useEffect(() => {
+        const mapIcon = document.getElementById('work-experience-map-icon');
+        
+        const handleIconClick = () => {
+            showTimelinePopup(0);
+        };
+
+        if (mapIcon) {
+            mapIcon.addEventListener('click', handleIconClick);
+        }
+
+        const jobDateElements = document.querySelectorAll('.job-date');
+        const handleDateClick = (index) => {
+            showTimelinePopup(index);
+        };
+
+        jobDateElements.forEach((el, index) => {
+            el.addEventListener('click', () => handleDateClick(index));
+        });
+
+        return () => {
+            if (mapIcon) {
+                mapIcon.removeEventListener('click', handleIconClick);
+            }
+            jobDateElements.forEach((el, index) => {
+                el.removeEventListener('click', () => handleDateClick(index));
+            });
+        };
+    }, [data]);
+
+    return (
+        <section id="experience" className="page-section">
+            <div className="scrollable-content-wrapper">
+                <h2 className="mb-4 flex-shrink-0" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span>Work Experience</span> <span id="work-experience-map-icon">🗺️</span>
+                </h2>
+                <div className="scrollable-content">
+                    {data.map((job, index) => (
+                        <div className="job mb-12" key={index} id={`job-${index}`}>
+                            <div className="sticky-header">
+                                <h3 className="job-title">{job.title} at <span><a href={job.company_url} target="_blank" rel="noopener noreferrer">{job.company}</a></span></h3>
+                                <div className="job-date">{job.date}</div>
+                            </div>
+                            <div className="item-content">
+                                <ul className="achievements-list">
+                                    {job.achievements.map((achievement, i) => (
+                                        <li key={i} dangerouslySetInnerHTML={{ __html: achievement.replace(/(Product Launches & Innovation:|Privacy & Security:|Leadership:|Launch & Growth:|Product Vision:|Feature Development:|Insurance Tech:|Team Leadership:|Product Growth:|CRM Platform:|System Architecture:)/g, '<span class="achievement-highlight">$1</span>') }}></li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
                     ))}
-                  </div>
                 </div>
-              </div>
-          )}
-          {job.achievements && job.achievements.length > 0 && (
-            <ul className="achievements-list">
-              {job.achievements.map((achievement, i) => (
-                <li key={i} dangerouslySetInnerHTML={{ __html: achievement }} />
-              ))}
-            </ul>
-          )}
-        </div>
-      </div>
-    ))}
-  </section>
-);
+            </div>
+            <TimelinePopup
+                jobs={data}
+                highlightIndex={highlightIndex}
+                isVisible={isPopupVisible}
+                onClose={hideTimelinePopup}
+                onSelect={handleTimelineSelect}
+            />
+        </section>
+    );
+};
 
 export default Experience;
