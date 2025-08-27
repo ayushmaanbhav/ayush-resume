@@ -3,8 +3,8 @@
         "name": "Ayush Jain",
         "title": "Leader, Architect",
         "contact": {
-            "phone": "+918544130924",
-            "email": "ayushmaanbhav1008@gmail.com",
+            "phone": "",
+            "email": "",
             "linkedin": "linkedin.com/in/ayusjain"
         },
         "hashtags": "#Save-Paper #Relevant-Links-Included",
@@ -17,7 +17,7 @@
             "company_url": "http://microsoft.com",
             "date": "03/2024 - Present",
             "team": "My team owned <strong>M365 Copilot</strong> and <strong>M365 Office Home</strong>, both Web and Native Apps.",
-            "technologies": "<strong>.NET</strong>, <strong>Azure</strong>, <strong>React</strong>, <strong>C#, C++</strong>.",
+            "technologies": "<strong>.NET</strong>, <strong>Azure</strong>, <strong>React</strong>, <strong>C#</strong>, <strong>C++</strong>.",
             "role": "Led the team on <strong>M365 security initiatives</strong>, strengthened <strong>user data privacy</strong>, critical role in launching first-versions of <strong>M365 Copilot</strong>.",
             "achievements": [
                 "Product Launches & Innovation: <span class=\"achievement-highlight\">Launched M365 Copilot</span>, top-priority of Satya Nadella; owned backend, worked corss-teams for on‑time delivery, grew to <span class=\"achievement-highlight\">1M MAU</span>.",
