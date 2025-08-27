@@ -69,6 +69,11 @@ const Experience = ({ data }) => {
                                 <div className="job-date">{job.date}</div>
                             </div>
                             <div className="item-content">
+                                <div className="job-details">
+                                    {job.team && <p><span className="detail-heading">Team:</span> <span dangerouslySetInnerHTML={{ __html: job.team }}></span></p>}
+                                    {job.role && <p><span className="detail-heading">Role:</span> <span dangerouslySetInnerHTML={{ __html: job.role }}></span></p>}
+                                    {job.technologies && <p><span className="detail-heading">Technologies:</span> <span dangerouslySetInnerHTML={{ __html: job.technologies }}></span></p>}
+                                </div>
                                 <ul className="achievements-list">
                                     {job.achievements.map((achievement, i) => (
                                         <li key={i} dangerouslySetInnerHTML={{ __html: achievement }}></li>

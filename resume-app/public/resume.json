@@ -16,11 +16,23 @@
             "company": "Microsoft",
             "company_url": "http://microsoft.com",
             "date": "03/2024 - Present",
+            "team": "My team owned <strong>M365 Copilot</strong> and <strong>M365 Office Home</strong>, both Web and Native Apps.",
+            "technologies": "<strong>.NET</strong>, <strong>Azure</strong>, <strong>React</strong>, <strong>C#, C++</strong>.",
+            "role": "Led the team on <strong>M365 security initiatives</strong>, strengthened <strong>user data privacy</strong>, critical role in launching first-versions of <strong>M365 Copilot</strong>.",
             "achievements": [
-                "<span class=\"achievement-highlight\">Product Launches & Innovation:</span> Launched <strong>M365 Copilot</strong>, growing to <span class=\"achievement-highlight\">1M MAU</span>. Deployed to all sovereign clouds in 2 months.",
-                "<span class=\"achievement-highlight\">Privacy & Security:</span> Achieved <strong>20% faster auth</strong>. Led team to deliver <span class=\"achievement-highlight\">245 security tasks</span> and resolve GDPR issues.",
-                "<strong>Lowered false alerts by 20%</strong> and <strong>on-call TAT by 50%</strong>. Reduced setup time by 30% with automation.",
-                "<span class=\"achievement-highlight\">Leadership:</span> <strong>Doubled dev count to 80</strong>. Mentored for <strong>2 promotions</strong>. Increased <span class=\"achievement-highlight\">dev-productivity by 10%</span> with AI bots."
+                "Product Launches & Innovation: <span class=\"achievement-highlight\">Launched M365 Copilot</span>, top-priority of Satya Nadella; owned backend, worked corss-teams for on‑time delivery, grew to <span class=\"achievement-highlight\">1M MAU</span>.",
+                "<span class=\"achievement-highlight\">Launched M365 Copilot across 2 sovereign clouds</span> within 1.5 months, by leading a team of 2-devs.",
+                "Built <span class=\"achievement-highlight\">OS‑level Copilot voice‑and‑vision prototype</span> (inspired by Rewind.ai) as part of Microsoft Hackathon (FHL).",
+                "Privacy & Security Engineering: <span class=\"achievement-highlight\">20% faster auth</span> by upgrading to secure, performant protocols like PFT‑PoP & OBO, and optimized token‑caching/claims validation.",
+                "Led 8-dev team, drove criticals, delivered <span class=\"achievement-highlight\">245 security tasks</span> in 2 months across 15 KPIs and multiple cloud environments.",
+                "<span class=\"achievement-highlight\">Fixed GDPR issues</span> & enhanced privacy safeguards in user‑data flows, coordinating cross‑team to ensure E2E compliance.",
+                "Operational Excellence: <span class=\"achievement-highlight\">Lowered false alerts by 20%</span>, <span class=\"achievement-highlight\">on‑call-dev TAT by 50%</span>, by revamping monitor logic and improving SoPs, leading a team of 4-devs.",
+                "Improved documentation quality with <span class=\"achievement-highlight\">11 new technical video-docs</span>, boosting team onboarding and cross‑knowledge transfer.",
+                "<span class=\"achievement-highlight\">Reduced setup time by 30%</span> by automating sovereign‑cloud infra provisioning via ARM templates for new EU sov-clouds setup.",
+                "Leadership & Mentorship: Hired and <span class=\"achievement-highlight\">doubled the dev-count to 80</span>. <span class=\"achievement-highlight\">2-peer-promotions</span>, achieved through active mentorship to juniors and peer support.",
+                "Drove impactful action-items increasing <span class=\"achievement-highlight\">10% dev-productivity</span>, by alignment on security standards, AI integration, and best practices.",
+                "Actively shaped Copilot’s use in my team and org, providing high‑value feedback as a power user to help shape AI usage and policies.",
+                "Improved dev-productivity by <span class=\"achievement-highlight\">10% by adding AI‑powered</span> code-review bot, issue-delegation bot, and some workflow bots."
             ]
         },
         {
@@ -28,9 +40,12 @@
             "company": "Lifease",
             "company_url": "https://in.linkedin.com/company/lifease/",
             "date": "08/2023 - 11/2023",
+            "role": "Led the engineering team for Lifease, a hyperlocal e-commerce platform.",
+            "technologies": "<strong>Azure</strong>, <strong>ReactJS</strong>, <strong>Java-Springboot</strong>.",
             "achievements": [
-                "<span class=\"achievement-highlight\">Leadership:</span> Led, hired, and mentored a <strong>7-developer team</strong> for a hyperlocal e-commerce platform.",
-                "<span class=\"achievement-highlight\">Launch & Growth:</span> Launched app and core modules, onboarding <strong>3000+ sellers</strong> and achieving <strong>150+ daily orders</strong>."
+                "Hired, mentored, and led a <span class=\"achievement-highlight\">7-developer team</span>, fostering collaboration, technical upskilling, and ownership culture.",
+                "Launched app and core modules: <span class=\"achievement-highlight\">orders</span>, <span class=\"achievement-highlight\">search</span>, <span class=\"achievement-highlight\">payments</span>, <span class=\"achievement-highlight\">communications</span>, inventory, logistics and CRM.",
+                "Onboarded <span class=\"achievement-highlight\">3000+ sellers</span> in Bangalore, Whitefield and Bellandur areas, and achieved an average daily order volume of <span class=\"achievement-highlight\">150+</span>."
             ]
         },
         {
@@ -38,9 +53,12 @@
             "company": "VERSE",
             "company_url": "https://verseisbetter.com/",
             "date": "03/2023 - 07/2023",
+            "role": "Co-created an AI-enabled social network for influencers, investors & founders.",
+            "technologies": "<strong>Azure</strong>, <strong>React</strong>, <strong>NodeJS</strong>, <strong>OpenAI</strong>, <strong>WhatsApp</strong>.",
             "achievements": [
-                "<span class=\"achievement-highlight\">Product Vision:</span> Co-created an <strong>AI-enabled social network</strong>, setting the product vision.",
-                "<span class=\"achievement-highlight\">Feature Development:</span> Launched features with <strong>AI-driven conversation assistants</strong>, growing to <strong>20K users</strong> and <strong>5k WAU</strong>."
+                "Set product vision for an <span class=\"achievement-highlight\">AI enabled social platform</span>, uniquely combining WhatsApp’s communication capabilities with OpenAI-powered intelligence to foster high-quality and efficient connections among LANIs (Large Active Network Individuals).",
+                "Developed and launched core features supporting curated introductions, summarizations, status updates, reminders, and <span class=\"achievement-highlight\">AI-driven conversation assistants</span>, enhancing networking effectiveness and ensuring connections are purposeful, relevant, and time-efficient.",
+                "Onboarded <span class=\"achievement-highlight\">20K users</span> and nurtured the platform's growth to <span class=\"achievement-highlight\">5k WAU</span> through active brainstorming and feedback."
             ]
         },
         {
@@ -48,12 +66,29 @@
             "company": "Navi Technologies",
             "company_url": "https://navi.com/",
             "date": "11/2020 - 11/2022",
+            "team": "<strong>Insurance Engineering</strong> & <strong>CRM Engineering</strong>.",
+            "role": "Headed core engineering and product initiatives for a fast-scaling insurance platform. Led the tech team from its inception, playing a pivotal role in technology strategy, execution, team building, and continuous improvement. Drove full-stack engineering for a cloud-native CRM ticket management platform, conceptualize and deliver real-time customer chat, agent-assignment systems, and intelligent bot support.",
+            "technologies": "<strong>Android</strong>, <strong>Kotlin</strong>, <strong>Java</strong>, <strong>SpringBoot</strong>, <strong>React</strong>, <strong>AWS</strong>, <strong>Firebase</strong>, <strong>Camunda</strong>, <strong>Postgres</strong>, <strong>Redis</strong>, <strong>Kafka</strong>, <strong>Kubernetes</strong>, <strong>GCP</strong>, <strong>Firestore</strong>, <strong>DynamoDB</strong>, <strong>Temporal</strong> etc.",
             "achievements": [
-                "<span class=\"achievement-highlight\">Insurance Tech:</span> Built <strong>health insurance stack in under a month</strong>. Launched <strong>8+ products</strong> handling <strong>20k+ DAU</strong>.",
-                "<span class=\"achievement-highlight\">Team Leadership:</span> Grew team from <strong>2 to 40</strong>, conducted <strong>270+ interviews</strong>, and mentored 8 engineers (<strong>6 promoted</strong>).",
-                "<span class=\"achievement-highlight\">Product Growth:</span> Increased payment <strong>conversions by 5-8%</strong> and overall funnels by <strong>10-60%</strong>.",
-                "<span class=\"achievement-highlight\">CRM Platform:</span> Built a ticket-management system to handle <strong>20k tickets a day</strong>.",
-                "<span class=\"achievement-highlight\">System Architecture:</span> Enabled <strong>10x scalability</strong> with <strong>20% infra cost reduction</strong> and achieved <strong>80% test coverage</strong>."
+                "Created <span class=\"achievement-highlight\">health insurance stack in under a month</span> (recognized by Sachin Bansal). Created and owned business‑critical microservices (payments, product-platform, pricing-engine, policies).",
+                "Launched <span class=\"achievement-highlight\">8+ products</span> handling <span class=\"achievement-highlight\">20k+ DAU</span> and <span class=\"achievement-highlight\">300+ daily purchases</span>.",
+                "Engineering Leadership & Delivery: Led teams for <span class=\"achievement-highlight\">13+ major features</span>, conducted & took <span class=\"achievement-highlight\">270+ interviews</span>, mentored 8 engineers (<span class=\"achievement-highlight\">6 promoted</span>), and <span class=\"achievement-highlight\">grew the team from 2 → 40</span>.",
+                "Increased onboarding efficiency by 30% through documentation & playbooks.",
+                "Ran bi‑weekly tech sessions, sprint planning & retrospectives, maintained stakeholder alignment to sustain productivity.",
+                "Product Growth & Conversions: Drove payments (integrations with Juspay/Razorpay/PayU) and dynamic-gateway-switching (<span class=\"achievement-highlight\">raising conversion by 5%</span>).",
+                "<span class=\"achievement-highlight\">Reduced EMI drop‑offs by 8%</span> and <span class=\"achievement-highlight\">boosted renewal-conversions by 5%</span>.",
+                "Enabled experimentation & funnels (Firebase, MoEngage, customer interviews), <span class=\"achievement-highlight\">improving conversions by 10–60%</span> across plans, payments, and customer contexts.",
+                "Simplified waiting periods, drove an additional <span class=\"achievement-highlight\">5% conversion</span>.",
+                "<span class=\"achievement-highlight\">Boosted product-launch-efficiency by 30-60%</span> through automation.",
+                "Customer Ops & Compliance: <span class=\"achievement-highlight\">Automated refunds</span> (<span class=\"achievement-highlight\">boosted agent-productivity 5%</span>) and improved UI & APIs for endorsements & purchases (<span class=\"achievement-highlight\">additional 5% agent-productivity</span>).",
+                "Enhanced serviceability & visibility (<span class=\"achievement-highlight\">5% fewer customer-requests</span>, <span class=\"achievement-highlight\">+5% agent-productivity</span>).",
+                "Represented tech in IRDAI audits and drove security compliance (WAF rules, repo/API checks).",
+                "Systems & Reliability: <span class=\"achievement-highlight\">Enabled 10x scalability</span> with <span class=\"achievement-highlight\">20% infra cost reduction</span>.",
+                "Strengthened system reliability via <span class=\"achievement-highlight\">Resilience4j</span> (circuit breakers/retries).",
+                "Achieved <span class=\"achievement-highlight\">80% test coverage</span>, integrated monitoring (Grafana, Prometheus, PagerDuty) for debugging and readiness.",
+                "Jointly created <span class=\"achievement-highlight\">ticket-management-system</span> based on <span class=\"achievement-highlight\">real-time</span>, <span class=\"achievement-highlight\">customer-chat</span> and <span class=\"achievement-highlight\">agent-assignment</span> with <span class=\"achievement-highlight\">bot-support</span>.",
+                "Designed and implemented <span class=\"achievement-highlight\">ticketing-workflows</span> for the home-loans team.",
+                "Nurtured the system growth to handle <span class=\"achievement-highlight\">20k tickets a day</span>."
             ]
         },
         {
@@ -61,8 +96,11 @@
             "company": "Enlite",
             "company_url": "https://enlite.in",
             "date": "05/2020 - 10/2020",
+            "technologies": "<strong>React</strong>, <strong>TypeScript</strong>, <strong>GCP</strong>, <strong>MongoDB</strong>, <strong>S3</strong>, <strong>BigBlueButton</strong>, <strong>ReTool</strong> etc.",
             "achievements": [
-                "Developed a feature-rich solution for virtual classes, exams, and classroom management."
+                "Developed a <span class=\"achievement-highlight\">feature-rich solution for virtual-classes, exams and classroom-management</span>.",
+                "Focused on internet-bandwidth-optimisation, smartphone-first-approach and ease-of-administration.",
+                "Minimalist, microservices-based-architecture enabled highly competitive pricing."
             ]
         },
         {
@@ -70,8 +108,10 @@
             "company": "Logward",
             "company_url": "https://www.logward.com/",
             "date": "05/2019 - 01/2020",
+            "technologies": "<strong>C#,</strong> <strong>React</strong>, <strong>Java</strong>, <strong>AWS</strong>, <strong>Camunda</strong>, <strong>Consul</strong>, <strong>Redis</strong>, <strong>SQS</strong>, etc.",
             "achievements": [
-                "Launched Ocean-Freight-FCL with <strong>80%+ test coverage</strong>."
+                "Jointly created a <span class=\"achievement-highlight\">flexible SCM system</span> with freight-forwarder & control-tower models.",
+                "Launched the first & last-leg (Germany-China) of <span class=\"achievement-highlight\">Ocean-Freight-FCL</span> with <span class=\"achievement-highlight\">80+% test-coverage-&-automation</span>."
             ]
         },
         {
@@ -80,7 +120,9 @@
             "company_url": "https://www.linkedin.com/company/fataka-games/about/",
             "date": "05/2018 - 12/2018",
             "achievements": [
-                "Developed real-time multiplayer games; one achieved <strong>30k+ downloads</strong> and <span class=\"achievement-highlight\">51% D1 retention</span>."
+                "Developed <span class=\"achievement-highlight\">real-time-multiplayer games</span> with high-quality regional content for Indian audiences.",
+                "Tools like <strong>Unity</strong>, <strong>TypeScript</strong> & <strong>Firebase</strong> enabled faster-development cycles.",
+                "Did four games. <strong>Shabd Khel</strong> achieved <span class=\"achievement-highlight\">30k+ downloads</span> and <span class=\"achievement-highlight\">D1 retention of 51%</span>."
             ]
         },
         {
@@ -88,9 +130,14 @@
             "company": "Moonfrog Labs",
             "company_url": "https://www.moonfroglabs.com",
             "date": "11/2016 - 05/2018",
+            "technologies": "<strong>Cocos-2d</strong>, <strong>C++</strong>, <strong>NodeJS</strong>, <strong>TypeScript</strong>, <strong>AWS</strong>, <strong>GCP</strong>, <strong>S3</strong>, <strong>MongoDB</strong>, <strong>CouchDB</strong>, <strong>Redis</strong>, <strong>RabbitMQ</strong>, <strong>Kafka</strong>, <strong>Redshift</strong>, <strong>Zookeeper</strong> etc.",
             "achievements": [
-                "Full-stack on a real-time multiplayer platform.",
-                "Efforts led to <span class=\"achievement-highlight\">5x DAU growth</span> (to ~5 million) and <span class=\"achievement-highlight\">2x revenue</span>."
+                "Worked full-stack, developed <span class=\"achievement-highlight\">microservices-based-ecosystems</span> for <span class=\"achievement-highlight\">real-time-multiplayer-platforms</span> offering a wide genre of games.",
+                "Led small-to-medium size teams on numerous games-and-features like <strong>Rummy</strong>, Teen-Patti, <strong>Poker</strong>, LAN-gameplay etc.",
+                "Drove HLD, LLD, task-planning, documentation, execution, integration, testing (<span class=\"achievement-highlight\">80+% coverage</span>), review, delivery & automation.",
+                "Experimented on monetization, engagement and retention working along product-owners.",
+                "Took interviews and mentored devs.",
+                "Total-efforts led to the growth of game <span class=\"achievement-highlight\">DAU by 5x, to about 5 million</span> and <span class=\"achievement-highlight\">revenue by 2x</span>."
             ]
         },
         {
@@ -98,8 +145,11 @@
             "company": "Amazon",
             "company_url": "https://amazon.com",
             "date": "05/2015 - 10/2016",
+            "team": "TFS-backend-team, responsible for financial-operations of Amazon-worldwide-transportation.",
+            "technologies": "<strong>Java</strong>, <strong>JavaScript</strong>, <strong>AWS</strong>, <strong>Oracle-RDB</strong>, <strong>DynamoDB</strong>, <strong>SQS</strong>, <strong>SNS</strong>, <strong>SWF</strong>, <strong>Redshift</strong>, <strong>Lambda</strong>, <strong>S3</strong>, <strong>Data-Pipelines</strong>, etc.",
             "achievements": [
-                "Owned a service processing <span class=\"achievement-highlight\">$1 million in refunds daily</span> with <strong>>90% test coverage</strong>."
+                "Re-architected for scale and owned Import-Fee-Duty-(IFD)-Refund-service (processed about <span class=\"achievement-highlight\">$1 million worth IFD per day</span>).",
+                "Contributed to various high-business/customer-impact initiatives and projects with <span class=\"achievement-highlight\">>90% test-code-coverage</span>."
             ]
         }
     ],
@@ -176,7 +226,7 @@
             ]
         },
         {
-            "title": "<span class=\"achievement-highlight\">Product - FARM</span>",
+            "title": "Product - <span class=\"achievement-highlight\">FARM</span>",
             "links": [
                 { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/product-farm" }
             ]
@@ -213,10 +263,10 @@
         }
     ],
     "awards": [
-        "<span class=\"achievement-highlight\">Top interviewer of the month</span> (2021): Got iPhone as an award in Navi Technologies.",
+        "<span class=\"achievement-highlight\">Top interviewer of the month</span> (2021): Got iPhone as an award.",
         "Recognition for <span class=\"achievement-highlight\">swift development</span> of the Navi Health Insurance App (2020): Got an appreciation note from Sachin Bansal.",
         "Recognition for <span class=\"achievement-highlight\">outstanding leadership</span> on the Poker and Rummy project (2018): Contribution at Moonfrog Labs.",
-        "<span class=\"achievement-highlight\">Coordinator of Computer Science Club</span> (2013-14): Prepared students for coding contests, won many.",
+        "<span class=\"achievement-highlight\">Coordinator of Computer Science Club</span> (2013-14): Prepared students for coding contests.",
         "<span class=\"achievement-highlight\">9th Position, National Hacking Contest</span> (2014): Stood 9th in Microsoft HackCon 2014."
     ],
     "skills": [
