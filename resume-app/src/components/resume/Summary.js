@@ -26,7 +26,8 @@ const Summary = ({ data }) => {
                 newOffset = Math.max(-8, Math.min(8, newOffset));
                 
                 span.style.setProperty('--y-offset', `${newOffset}px`);
-                span.style.animationDelay = `${i * 0.1}s`;
+                span.style.animationDelay = `${i * Math.random() * 0.1}s`;
+                span.style.animationDuration = Math.random() * 0.5 + 5 + "s";
                 nameEl.appendChild(span);
                 lastOffset = newOffset;
             });
