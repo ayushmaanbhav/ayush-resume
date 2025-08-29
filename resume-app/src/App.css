@@ -43,6 +43,7 @@ body {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    padding-right: 1rem;
 }
 
 .page-section {
@@ -53,7 +54,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
     overflow: hidden;
 }
@@ -206,7 +207,7 @@ ul { list-style-type: none; padding-left: 0; }
 
 /* Education Section Styles */
 .education-line { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
-.score-line { display: flex; justify-content: space-between; align-items: center; }
+.score-line { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
 .score-highlight { color: var(--chandan-color); font-weight: bold; }
 .star-rating { display: flex; }
 .star { font-size: 1.2rem; color: var(--border-color); transition: color 0.3s; animation: float 3s ease-in-out infinite; }
