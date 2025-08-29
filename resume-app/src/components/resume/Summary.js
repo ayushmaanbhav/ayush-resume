@@ -79,7 +79,6 @@ const Summary = ({ data }) => {
                         <p className="hashtags">{hashtags}</p>
                     </div>
                 </header>
-                <h2>Personal Summary</h2>
                 <p dangerouslySetInnerHTML={{ __html: personalSummary }}></p>
             </div>
         </section>
