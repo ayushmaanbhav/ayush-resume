@@ -27,15 +27,17 @@ const Skills = ({ data }) => {
 
     return (
         <section id="skills" className="page-section">
-            <div className="container">
-                <h2>Languages and Technologies</h2>
-                <div className="skills-list">
-                    <div className="tags-container">
-                        {data.map((skill, index) => (
-                            <span className="skill-tag" key={index}>
-                                <span>{skillIcons[skill] || '✨'}</span>{skill}
-                            </span>
-                        ))}
+            <div className="scrollable-content-wrapper">
+                <h2 className="text-center mb-4 flex-shrink-0">Languages and Technologies</h2>
+                <div className="scrollable-content">
+                    <div className="skills-list">
+                        <div className="tags-container">
+                            {data.map((skill, index) => (
+                                <span className="skill-tag" key={index}>
+                                    <span>{skillIcons[skill] || '✨'}</span>{skill}
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

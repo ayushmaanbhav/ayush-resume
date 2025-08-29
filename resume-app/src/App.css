@@ -423,8 +423,33 @@ ul { list-style-type: none; padding-left: 0; }
     h1 { font-size: 2rem; }
     h2 { font-size: 1.6rem; }
     .header-section, .job-header { flex-direction: column; align-items: flex-start; }
+    .header-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-pic {  
+        margin-bottom: 0rem;
+    }
     .header-section .contact-info { text-align: left; margin-top: 1rem; }
     .job-date { margin-left: 0; margin-top: 0.25rem; }
+
+    .publication-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .publication-links-wrapper {
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+    }
+    .publications-section {
+        align-items: flex-start;
+        .skill-tag {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.9rem;
+        }
+    }
 }
 
 /* Navigation Sidebar Styles */
@@ -492,7 +517,7 @@ ul { list-style-type: none; padding-left: 0; }
 .header-main {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .profile-pic {
@@ -529,16 +554,27 @@ ul { list-style-type: none; padding-left: 0; }
 .publication-title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.publication-title-text {
+    flex-grow: 1;
+}
+
+.publication-links-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 
 .publication-links {
-    margin-left: 1rem;
+    display: flex;
+    gap: 1rem;
     white-space: nowrap;
 }
 
 .publication-links a {
-    margin-right: 1rem;
     font-weight: 600;
 }
 
