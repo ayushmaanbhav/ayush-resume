@@ -473,7 +473,7 @@ ul { list-style-type: none; padding-left: 0; }
 .navigation-sidebar {
     position: fixed;
     top: 50%;
-    right: 1rem;
+    right: 1.5rem;
     transform: translateY(-50%);
     z-index: 1000;
 }
