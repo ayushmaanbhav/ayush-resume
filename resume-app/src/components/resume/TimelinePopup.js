@@ -132,11 +132,13 @@ const TimelinePopup = ({ jobs, highlightIndex, isVisible, onClose, onSelect }) =
         const closeButtonHTML = isTouchDevice ? `<button id="close-popup-btn">Close</button>` : '';
 
         return `
-            <svg class="timeline-svg" width="${svgContentWidth}" height="${svgHeight}" viewBox="${actualMinX} 0 ${svgContentWidth} ${svgHeight}">
-                ${pathCasing}
-                ${path}
-                ${elements}
-            </svg>
+            <div class="timeline-scroll-wrapper">
+                <svg class="timeline-svg" width="${svgContentWidth}" height="${svgHeight}" viewBox="${actualMinX} 0 ${svgContentWidth} ${svgHeight}">
+                    ${pathCasing}
+                    ${path}
+                    ${elements}
+                </svg>
+            </div>
             ${closeButtonHTML}
         `;
     };

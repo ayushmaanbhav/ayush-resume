@@ -317,7 +317,7 @@ ul { list-style-type: none; padding-left: 0; }
     -webkit-backdrop-filter: blur(8px);
     max-width: 90vw;
     max-height: 80vh;
-    overflow-y: auto;
+    overflow: hidden;
     transform: translate(-50%, -50%) scale(0.95);
     display: flex;
     flex-direction: column;
@@ -335,6 +335,7 @@ ul { list-style-type: none; padding-left: 0; }
 #timeline-popup .timeline-svg {
     stroke-linecap: round;
     stroke-linejoin: round;
+    flex-shrink: 0;
 }
 
 #timeline-popup .timeline-svg .timeline-path-casing {
@@ -364,13 +365,13 @@ ul { list-style-type: none; padding-left: 0; }
 #timeline-popup .timeline-svg .company-text {
     font-family: var(--font-sans);
     fill: var(--text-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 #timeline-popup .timeline-svg .company-date {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     fill: var(--accent-color);
 }
 
@@ -392,15 +393,26 @@ ul { list-style-type: none; padding-left: 0; }
     animation: bounce 0.5s ease, sine-wave-float 4s ease-in-out infinite;
 }
 
+.timeline-scroll-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 #close-popup-btn {
     background-color: var(--accent-color);
     color: white;
     border: none;
-    padding: 0.5rem 1.5rem;
-    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
     transition: background-color 0.2s ease;
+    flex-shrink: 0;
+    margin-top: 1rem;
 }
 #close-popup-btn:hover {
     background-color: #9966ff;
@@ -449,6 +461,10 @@ ul { list-style-type: none; padding-left: 0; }
             padding: 0.4rem 0.8rem;
             font-size: 0.9rem;
         }
+    }
+    #timeline-popup {
+        padding: 1rem 0.5rem;
+        max-height: 80vh;
     }
 }
 
