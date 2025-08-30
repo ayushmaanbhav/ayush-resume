@@ -58,7 +58,7 @@ const SpaceBackground = () => {
 
         function init() {
             setSize();
-            const numMeteors = Math.floor(width / 120) + 11;
+            const numMeteors = Math.floor(width / 100) + 11;
             const numStars = Math.floor(width / 25) + 5;
             meteors = [];
             stars = [];
