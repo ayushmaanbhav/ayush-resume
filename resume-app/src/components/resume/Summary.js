@@ -76,7 +76,12 @@ const Summary = ({ data }) => {
                     <div className="contact-info">
                         <p><a href={`tel://${contact.phone}`}>{contact.phone}</a></p>
                         <p><a href={`mailto:${contact.email}`}>{contact.email}</a></p>
-                        <p><a href={`https://${contact.linkedin}`} target="_blank" rel="noopener noreferrer">{contact.linkedin}</a></p>
+                        <p>
+                            <a href={`https://${contact.linkedin}`} target="_blank" rel="noopener noreferrer">
+                                <img src="/linkedin-logo.svg" alt="LinkedIn" style={{ width: '20px', height: '20px', marginRight: '8px', verticalAlign: 'middle' }} />
+                                {contact.linkedin}
+                            </a>
+                        </p>
                         <p className="hashtags">{hashtags}</p>
                     </div>
                 </header>
