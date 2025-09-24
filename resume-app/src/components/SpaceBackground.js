@@ -67,7 +67,6 @@ const SpaceBackground = () => {
         let stars = [];
         let animationFrameId;
         let lastTimestamp = 0;
-        const targetFPS = CONFIG.TARGET_FPS;
         const frameInterval = CONFIG.FRAME_INTERVAL;
 
         function setSize() {
