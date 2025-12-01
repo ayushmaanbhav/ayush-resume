@@ -3,6 +3,7 @@ import './App.css';
 import SpaceBackground from './components/SpaceBackground';
 import SmartScrollView from './components/SmartScrollView';
 import Summary from './components/resume/Summary';
+import KeyMetrics from './components/resume/KeyMetrics';
 import Experience from './components/resume/Experience';
 import Education from './components/resume/Education';
 import Skills from './components/resume/Skills';
@@ -54,12 +55,20 @@ function App() {
                 {resumeData && (
                     <>
                         <Summary data={resumeData.summary} />
+                        {resumeData.keyMetrics && <KeyMetrics data={resumeData.keyMetrics} />}
                         <Experience data={resumeData.experience} />
+                        {resumeData.entrepreneurialExperience && (
+                            <Experience
+                                data={resumeData.entrepreneurialExperience}
+                                title="Entrepreneurial Experience"
+                                isEntrepreneurial={true}
+                            />
+                        )}
                         <Education data={resumeData.education} />
                         <Publications data={resumeData.publications} />
                         <Awards data={resumeData.awards} />
                         <Skills data={resumeData.skills} />
-                        <Hobbies data={resumeData.hobbies} />
+                        <Hobbies data={resumeData.hobbies} alsoInterests={resumeData.alsoInterests} />
                         <AIAssistant resumeData={resumeData} />
                     </>
                 )}

@@ -1,156 +1,163 @@
 {
     "summary": {
         "name": "Ayush Jain",
-        "title": "Leader, Architect",
+        "title": "Product Leader, Technical PM",
         "contact": {
-            "phone": "",
-            "email": "",
             "linkedin": "linkedin.com/in/ayusjain"
         },
-        "hashtags": "",
-        "personalSummary": "Engineering leader with <span class=\"burning-highlight\">10+ years</span> driving impactful product and technology outcomes across startups and MNCs. Delivered <span class=\"burning-highlight\">intelligent, robust, resilient, secure and LLM-enabled systems</span>. Blend of generalist adaptability and deep specialist expertise, excelling in strategic, high‑impact roles. Proven record of leading cross‑functional initiatives that <span class=\"burning-highlight\">accelerated technical and business growth</span>."
+        "hashtags": "AI/LLM Products | IITian | 4x Founder",
+        "personalSummary": "Aspiring <span class=\"burning-highlight\">Product Manager/Owner</span> with <span class=\"burning-highlight\">10+ years</span> driving product outcomes across startups & MNCs. <span class=\"burning-highlight\">IITian</span> with rare blend of hands-on AI/LLM expertise and deep technical depth—enabling me to bridge product vision with engineering execution. <span class=\"burning-highlight\">Launched 9+ products</span> (0→1), achieving 5M DAU gaming platform, 1M MAU enterprise Copilot, and <span class=\"burning-highlight\">60% conversion lifts</span> through customer-driven experimentation. Conducted <span class=\"burning-highlight\">50+ in-person customer interviews</span>, built experimentation platforms, and translated insights into features that moved business metrics. <span class=\"burning-highlight\">4x founder</span> experienced in product discovery, roadmap prioritization, go-to-market, and cross-functional leadership. Seeking PM role where my technical fluency in AI/GenAI and breadth across 6+ domains amplifies product impact."
     },
+    "keyMetrics": [
+        { "value": "9+", "label": "Products", "sublabel": "Launched 0→1", "accent": true },
+        { "value": "60%", "label": "Conversion Lift", "sublabel": "A/B Experiments", "accent": true },
+        { "value": "5M", "label": "Peak DAU", "sublabel": "Product Growth", "accent": false },
+        { "value": "1M+", "label": "MAU", "sublabel": "Enterprise Copilot", "accent": false },
+        { "value": "100+", "label": "User Interviews", "sublabel": "Customer Insights", "accent": false },
+        { "value": "6+", "label": "Domains", "sublabel": "FinTech to Gaming", "accent": false }
+    ],
     "experience": [
         {
             "title": "Senior Software Engineer",
             "company": "Microsoft",
-            "company_url": "http://microsoft.com",
-            "date": "03/2024 - Present",
-            "team": "My team owned <strong>M365 Copilot</strong> and <strong>M365 Office Home</strong>, both Web and Native Apps.",
-            "technologies": "<strong>.NET</strong>, <strong>Azure</strong>, <strong>React</strong>, <strong>C#</strong>, <strong>C++</strong>.",
-            "role": "Led the team on <strong>M365 security initiatives</strong>, strengthened <strong>user data privacy</strong>, critical role in launching first-versions of <strong>M365 Copilot</strong>.",
+            "company_url": "https://microsoft.com",
+            "location": "Noida",
+            "date": "Mar 2024 - Aug 2025",
+            "team": "M365 Copilot & M365 Office · Privacy & Compliance Lead",
+            "product": "Enterprise AI Copilot, B2B SaaS, Sovereign Cloud",
             "achievements": [
-                "Product Launches & Innovation: <span class=\"achievement-highlight\">Launched M365 Copilot</span>, top-priority of Satya Nadella; owned backend, worked corss-teams for on‑time delivery, grew to <span class=\"achievement-highlight\">1M MAU</span>.",
-                "<span class=\"achievement-highlight\">Launched M365 Copilot across 2 sovereign clouds</span> within 1.5 months, by leading a team of 2-devs.",
-                "Built <span class=\"achievement-highlight\">OS‑level Copilot voice‑and‑vision prototype</span> (inspired by Rewind.ai) as part of Microsoft Hackathon (FHL).",
-                "Privacy & Security Engineering: <span class=\"achievement-highlight\">20% faster auth</span> by upgrading to secure, performant protocols like PFT‑PoP & OBO, and optimized token‑caching/claims validation.",
-                "Led 8-dev team, drove criticals, delivered <span class=\"achievement-highlight\">245 security tasks</span> in 2 months across 15 KPIs and multiple cloud environments.",
-                "<span class=\"achievement-highlight\">Fixed GDPR issues</span> & enhanced privacy safeguards in user‑data flows, coordinating cross‑team to ensure E2E compliance.",
-                "Operational Excellence: <span class=\"achievement-highlight\">Lowered false alerts by 20%</span>, <span class=\"achievement-highlight\">on‑call-dev TAT by 50%</span>, by revamping monitor logic and improving SoPs, leading a team of 4-devs.",
-                "Improved documentation quality with <span class=\"achievement-highlight\">11 new technical video-docs</span>, boosting team onboarding and cross‑knowledge transfer.",
-                "<span class=\"achievement-highlight\">Reduced setup time by 30%</span> by automating sovereign‑cloud infra provisioning via ARM templates for new EU sov-clouds setup.",
-                "Leadership & Mentorship: Hired and <span class=\"achievement-highlight\">doubled the dev-count to 80</span>. <span class=\"achievement-highlight\">2-peer-promotions</span>, achieved through active mentorship to juniors and peer support.",
-                "Drove impactful action-items increasing <span class=\"achievement-highlight\">10% dev-productivity</span>, by alignment on security standards, AI integration, and best practices.",
-                "Actively shaped Copilot’s use in my team and org, providing high‑value feedback as a power user to help shape AI usage and policies.",
-                "Improved dev-productivity by <span class=\"achievement-highlight\">10% by adding AI‑powered</span> code-review bot, issue-delegation bot, and some workflow bots."
-            ]
+                "<strong>Launch Contribution:</strong> Contributed to launch of <span class=\"achievement-highlight\">M365 Copilot</span> (Satya Nadella's top priority), coordinating with cross-functional teams across engineering, design, and compliance. Product grew to <span class=\"achievement-highlight\">1M MAU</span>. Drove <span class=\"achievement-highlight\">sovereign cloud expansion to 2 new markets</span> within 1.5 months.",
+                "<strong>Compliance & User Experience:</strong> Owned <span class=\"achievement-highlight\">GDPR compliance</span> and privacy requirements. Reduced auth latency by <span class=\"achievement-highlight\">20%</span> improving user onboarding. Delivered <span class=\"achievement-highlight\">245 security/privacy requirements</span> across 15 KPIs, balancing user needs with regulatory constraints.",
+                "<strong>Cross-functional Collaboration:</strong> Worked with <span class=\"achievement-highlight\">8+ teams</span> (security, legal, infrastructure, design). Created 11 technical video-docs improving stakeholder alignment. Drove action-items increasing <span class=\"achievement-highlight\">10% team productivity</span>.",
+                "<strong>Innovation:</strong> Built OS-level Copilot voice-and-vision prototype at Microsoft Hackathon (FHL). Contributed to hiring, <span class=\"achievement-highlight\">doubling team to 80 members</span>."
+            ],
+            "transition": "Seeking Product Manager/Owner role to leverage hands-on AI/LLM expertise and deep technical depth for greater product impact."
         },
         {
-            "title": "Staff Product Engineer",
-            "company": "Lifease",
-            "company_url": "https://in.linkedin.com/company/lifease/",
-            "date": "08/2023 - 11/2023",
-            "role": "Led the engineering team for Lifease, a hyperlocal e-commerce platform.",
-            "technologies": "<strong>Azure</strong>, <strong>ReactJS</strong>, <strong>Java-Springboot</strong>.",
-            "achievements": [
-                "Hired, mentored, and led a <span class=\"achievement-highlight\">7-developer team</span>, fostering collaboration, technical upskilling, and ownership culture.",
-                "Launched app and core modules: <span class=\"achievement-highlight\">orders</span>, <span class=\"achievement-highlight\">search</span>, <span class=\"achievement-highlight\">payments</span>, <span class=\"achievement-highlight\">communications</span>, inventory, logistics and CRM.",
-                "Onboarded <span class=\"achievement-highlight\">3000+ sellers</span> in Bangalore, Whitefield and Bellandur areas, and achieved an average daily order volume of <span class=\"achievement-highlight\">150+</span>."
-            ]
-        },
-        {
-            "title": "Product Engineer",
-            "company": "VERSE",
-            "company_url": "https://verseisbetter.com/",
-            "date": "03/2023 - 07/2023",
-            "role": "Co-created an AI-enabled social network for influencers, investors & founders.",
-            "technologies": "<strong>Azure</strong>, <strong>React</strong>, <strong>NodeJS</strong>, <strong>OpenAI</strong>, <strong>WhatsApp</strong>.",
-            "achievements": [
-                "Set product vision for an <span class=\"achievement-highlight\">AI enabled social platform</span>, uniquely combining WhatsApp’s communication capabilities with OpenAI-powered intelligence to foster high-quality and efficient connections among LANIs (Large Active Network Individuals).",
-                "Developed and launched core features supporting curated introductions, summarizations, status updates, reminders, and <span class=\"achievement-highlight\">AI-driven conversation assistants</span>, enhancing networking effectiveness and ensuring connections are purposeful, relevant, and time-efficient.",
-                "Onboarded <span class=\"achievement-highlight\">20K users</span> and nurtured the platform's growth to <span class=\"achievement-highlight\">5k WAU</span> through active brainstorming and feedback."
-            ]
-        },
-        {
-            "title": "Tech Lead",
+            "title": "Founding Engineering Lead & Product",
             "company": "Navi Technologies",
-            "company_url": "https://navi.com/",
-            "date": "11/2020 - 11/2022",
-            "team": "<strong>Insurance Engineering</strong> & <strong>CRM Engineering</strong>.",
-            "role": "Headed core engineering and product initiatives for a fast-scaling insurance platform. Led the tech team from its inception, playing a pivotal role in technology strategy, execution, team building, and continuous improvement. Drove full-stack engineering for a cloud-native CRM ticket management platform, conceptualize and deliver real-time customer chat, agent-assignment systems, and intelligent bot support.",
-            "technologies": "<strong>Android</strong>, <strong>Kotlin</strong>, <strong>Java</strong>, <strong>SpringBoot</strong>, <strong>React</strong>, <strong>AWS</strong>, <strong>Firebase</strong>, <strong>Camunda</strong>, <strong>Postgres</strong>, <strong>Redis</strong>, <strong>Kafka</strong>, <strong>Kubernetes</strong>, <strong>GCP</strong>, <strong>Firestore</strong>, <strong>DynamoDB</strong>, <strong>Temporal</strong> etc.",
+            "company_url": "https://navi.com",
+            "location": "Bangalore",
+            "date": "Nov 2020 - Nov 2022",
+            "team": "Insurance Products · Payments · CRM · Experimentation",
+            "product": "Health Insurance (B2C), Group Insurance (B2B), Payments Platform, CRM",
+            "promotion": "2 promotions in 2 years: Recognized by Sachin Bansal (Flipkart co-founder) for product impact",
             "achievements": [
-                "Created <span class=\"achievement-highlight\">health insurance stack in under a month</span> (recognized by Sachin Bansal). Created and owned business‑critical microservices (payments, product-platform, pricing-engine, policies).",
-                "Launched <span class=\"achievement-highlight\">8+ products</span> handling <span class=\"achievement-highlight\">20k+ DAU</span> and <span class=\"achievement-highlight\">300+ daily purchases</span>.",
-                "Engineering Leadership & Delivery: Led teams for <span class=\"achievement-highlight\">13+ major features</span>, conducted & took <span class=\"achievement-highlight\">270+ interviews</span>, mentored 8 engineers (<span class=\"achievement-highlight\">6 promoted</span>), and <span class=\"achievement-highlight\">grew the team from 2 → 40</span>.",
-                "Increased onboarding efficiency by 30% through documentation & playbooks.",
-                "Ran bi‑weekly tech sessions, sprint planning & retrospectives, maintained stakeholder alignment to sustain productivity.",
-                "Product Growth & Conversions: Drove payments (integrations with Juspay/Razorpay/PayU) and dynamic-gateway-switching (<span class=\"achievement-highlight\">raising conversion by 5%</span>).",
-                "<span class=\"achievement-highlight\">Reduced EMI drop‑offs by 8%</span> and <span class=\"achievement-highlight\">boosted renewal-conversions by 5%</span>.",
-                "Enabled experimentation & funnels (Firebase, MoEngage, customer interviews), <span class=\"achievement-highlight\">improving conversions by 10–60%</span> across plans, payments, and customer contexts.",
-                "Simplified waiting periods, drove an additional <span class=\"achievement-highlight\">5% conversion</span>.",
-                "<span class=\"achievement-highlight\">Boosted product-launch-efficiency by 30-60%</span> through automation.",
-                "Customer Ops & Compliance: <span class=\"achievement-highlight\">Automated refunds</span> (<span class=\"achievement-highlight\">boosted agent-productivity 5%</span>) and improved UI & APIs for endorsements & purchases (<span class=\"achievement-highlight\">additional 5% agent-productivity</span>).",
-                "Enhanced serviceability & visibility (<span class=\"achievement-highlight\">5% fewer customer-requests</span>, <span class=\"achievement-highlight\">+5% agent-productivity</span>).",
-                "Represented tech in IRDAI audits and drove security compliance (WAF rules, repo/API checks).",
-                "Systems & Reliability: <span class=\"achievement-highlight\">Enabled 10x scalability</span> with <span class=\"achievement-highlight\">20% infra cost reduction</span>.",
-                "Strengthened system reliability via <span class=\"achievement-highlight\">Resilience4j</span> (circuit breakers/retries).",
-                "Achieved <span class=\"achievement-highlight\">80% test coverage</span>, integrated monitoring (Grafana, Prometheus, PagerDuty) for debugging and readiness.",
-                "Jointly created <span class=\"achievement-highlight\">ticket-management-system</span> based on <span class=\"achievement-highlight\">real-time</span>, <span class=\"achievement-highlight\">customer-chat</span> and <span class=\"achievement-highlight\">agent-assignment</span> with <span class=\"achievement-highlight\">bot-support</span>.",
-                "Designed and implemented <span class=\"achievement-highlight\">ticketing-workflows</span> for the home-loans team.",
-                "Nurtured the system growth to handle <span class=\"achievement-highlight\">20k tickets a day</span>."
-            ]
-        },
-        {
-            "title": "Co-founder",
-            "company": "Enlite",
-            "company_url": "https://enlite.in",
-            "date": "05/2020 - 10/2020",
-            "technologies": "<strong>React</strong>, <strong>TypeScript</strong>, <strong>GCP</strong>, <strong>MongoDB</strong>, <strong>S3</strong>, <strong>BigBlueButton</strong>, <strong>ReTool</strong> etc.",
-            "achievements": [
-                "Developed a <span class=\"achievement-highlight\">feature-rich solution for virtual-classes, exams and classroom-management</span>.",
-                "Focused on internet-bandwidth-optimisation, smartphone-first-approach and ease-of-administration.",
-                "Minimalist, microservices-based-architecture enabled highly competitive pricing."
-            ]
+                "<strong>Product Strategy & Launch:</strong> Defined product vision for insurance vertical as <span class=\"achievement-highlight\">founding member</span>. Launched <span class=\"achievement-highlight\">8+ insurance products</span> (retail & group) achieving <span class=\"achievement-highlight\">20k+ DAU</span>, <span class=\"achievement-highlight\">300+ daily purchases</span>, <span class=\"achievement-highlight\">1+ lac policies/year</span>. Created no-code product-config platform enabling <span class=\"achievement-highlight\">30-60% faster launches</span>.",
+                "<strong>User Research & Customer Insights:</strong> Conducted <span class=\"achievement-highlight\">50+ in-person customer interviews</span> and site visits. EMI payment option (from customer feedback) drove <span class=\"achievement-highlight\">60% conversion boost</span>. Payment mandates reduced EMI drop-offs by <span class=\"achievement-highlight\">8%</span>. Simplified waiting-period messaging improved conversion by 2%.",
+                "<strong>Funnel Analysis & Experimentation:</strong> Built metrics funnels with Firebase & MoEngage. Created experimentation platform for <span class=\"achievement-highlight\">context-based A/Bs</span> (location, age, behavior) achieving <span class=\"achievement-highlight\">10-60% conversion lifts</span>. Dynamic gateway switching (Juspay/Razorpay/PayU) boosted payment success by <span class=\"achievement-highlight\">5%</span>. Drove renewal upgradability improving renewal-conversions by <span class=\"achievement-highlight\">5%</span>.",
+                "<strong>Cross-functional Leadership:</strong> Collaborated with business, actuarial, compliance, and operations. Led <span class=\"achievement-highlight\">13+ major releases</span>. <span class=\"achievement-highlight\">Grew team 2→40</span>, conducted 270+ interviews. Represented product in <span class=\"achievement-highlight\">IRDAI regulatory audits</span>. Mentored <span class=\"achievement-highlight\">8+ developers</span>, 6 achieved promotions.",
+                "<strong>Customer Ops & CRM:</strong> Built real-time CRM handling <span class=\"achievement-highlight\">20k tickets/day</span> with in-app chat. Conducted site visits to pin-down requirements. Improved agent productivity by 5% through UI and tooling enhancements. Enabled <span class=\"achievement-highlight\">10x scalability</span> while reducing infra costs by 20%."
+            ],
+            "transition": "Insurance vertical moved to maintenance mode; leadership dissolved and team downsized. Sought new challenges."
         },
         {
             "title": "SSE",
-            "company": "Logward",
-            "company_url": "https://www.logward.com/",
-            "date": "05/2019 - 01/2020",
-            "technologies": "<strong>C#,</strong> <strong>React</strong>, <strong>Java</strong>, <strong>AWS</strong>, <strong>Camunda</strong>, <strong>Consul</strong>, <strong>Redis</strong>, <strong>SQS</strong>, etc.",
+            "company": "Logward (Leschaco)",
+            "company_url": "https://logward.com",
+            "location": "Bangalore",
+            "date": "May 2019 - Jan 2020",
+            "team": "Founding Engineer · Supply Chain Management Platform",
+            "technologies": "C#, React, Java, AWS, Camunda, Consul, Redis, SQS, Kubernetes",
             "achievements": [
-                "Jointly created a <span class=\"achievement-highlight\">flexible SCM system</span> with freight-forwarder & control-tower models.",
-                "Launched the first & last-leg (Germany-China) of <span class=\"achievement-highlight\">Ocean-Freight-FCL</span> with <span class=\"achievement-highlight\">80+% test-coverage-&-automation</span>."
-            ]
+                "Built <span class=\"achievement-highlight\">Ocean-Freight FCL</span> first & last-leg (Germany-China) with rate-management, trucking integrations, customs workflow on Camunda. Implemented <span class=\"achievement-highlight\">Air-Freight</span> with Lufthansa spot-rates. <span class=\"achievement-highlight\">80+% test-coverage</span>.",
+                "Launched <span class=\"achievement-highlight\">L4 control-tower model</span> in 2 months. Integrated Resilience4j, improved test-coverage by 20%. Represented engineering at <span class=\"achievement-highlight\">Hamburg summit</span>."
+            ],
+            "transition": "Product-engineering gaps and absence of live clients; sought opportunity with clearer product-market fit."
         },
         {
-            "title": "Co-founder",
-            "company": "Fataka Games",
-            "company_url": "https://www.linkedin.com/company/fataka-games/about/",
-            "date": "05/2018 - 12/2018",
-            "achievements": [
-                "Developed <span class=\"achievement-highlight\">real-time-multiplayer games</span> with high-quality regional content for Indian audiences.",
-                "Tools like <strong>Unity</strong>, <strong>TypeScript</strong> & <strong>Firebase</strong> enabled faster-development cycles.",
-                "Did four games. <strong>Shabd Khel</strong> achieved <span class=\"achievement-highlight\">30k+ downloads</span> and <span class=\"achievement-highlight\">D1 retention of 51%</span>."
-            ]
-        },
-        {
-            "title": "SE & SSE",
+            "title": "Engineering & Product (Gaming)",
             "company": "Moonfrog Labs",
-            "company_url": "https://www.moonfroglabs.com",
-            "date": "11/2016 - 05/2018",
-            "technologies": "<strong>Cocos-2d</strong>, <strong>C++</strong>, <strong>NodeJS</strong>, <strong>TypeScript</strong>, <strong>AWS</strong>, <strong>GCP</strong>, <strong>S3</strong>, <strong>MongoDB</strong>, <strong>CouchDB</strong>, <strong>Redis</strong>, <strong>RabbitMQ</strong>, <strong>Kafka</strong>, <strong>Redshift</strong>, <strong>Zookeeper</strong> etc.",
+            "company_url": "https://moonfroglabs.com",
+            "location": "Bangalore",
+            "date": "Nov 2016 - May 2018",
+            "team": "Real-time Multiplayer Gaming Platform · TeenPatti Gold",
+            "product": "Poker, Rummy, LAN Multiplayer Engine (B2C Gaming)",
+            "promotion": "Promoted for exceptional product delivery; grew platform DAU 5x",
             "achievements": [
-                "Worked full-stack, developed <span class=\"achievement-highlight\">microservices-based-ecosystems</span> for <span class=\"achievement-highlight\">real-time-multiplayer-platforms</span> offering a wide genre of games.",
-                "Led small-to-medium size teams on numerous games-and-features like <strong>Rummy</strong>, Teen-Patti, <strong>Poker</strong>, LAN-gameplay etc.",
-                "Drove HLD, LLD, task-planning, documentation, execution, integration, testing (<span class=\"achievement-highlight\">80+% coverage</span>), review, delivery & automation.",
-                "Experimented on monetization, engagement and retention working along product-owners.",
-                "Took interviews and mentored devs.",
-                "Total-efforts led to the growth of game <span class=\"achievement-highlight\">DAU by 5x, to about 5 million</span> and <span class=\"achievement-highlight\">revenue by 2x</span>."
-            ]
+                "<strong>User Research & Product Discovery:</strong> Conducted surveys, played games at public events, and <span class=\"achievement-highlight\">explored casinos</span> to collect data points on popular game variations and play-styles. Worked closely with product and data-science teams to define requirements and <span class=\"achievement-highlight\">identify drop-offs in funnels</span>.",
+                "<strong>Product Launch & Growth:</strong> Led launch of <span class=\"achievement-highlight\">Poker, Rummy, Tournaments, Dealers-Choice</span>. Achieved <span class=\"achievement-highlight\">2.5M DAU</span>, <span class=\"achievement-highlight\">D7 retention +30%</span>, <span class=\"achievement-highlight\">conversions +20%</span>. Total platform growth: <span class=\"achievement-highlight\">DAU 5x to 5M</span>, <span class=\"achievement-highlight\">revenue 2x to USD 3M/month</span>, <span class=\"achievement-highlight\">100M downloads</span>.",
+                "<strong>Experimentation & Monetization:</strong> Built experimentation portal for product team to manage A/Bs. Optimized monetization, engagement, and retention. Mini-games and features improved <span class=\"achievement-highlight\">user-engagement by 40%+</span> and in-game money flows by 15%. Expanded to <span class=\"achievement-highlight\">Middle-East markets</span> with PayPal integration (+20% regional inflows).",
+                "<strong>Feature Innovation:</strong> Conceptualized <span class=\"achievement-highlight\">LAN gameplay engine</span> enabling offline multiplayer. Gained <span class=\"achievement-highlight\">1M+ users in first month</span>, reused across 6+ games. <span class=\"achievement-highlight\">Reduced crashes from 15% to 1%</span> through systematic bug-hunts."
+            ],
+            "transition": "Co-founders exited the company; explored entrepreneurship with colleagues during mobile gaming boom in India."
         },
         {
-            "title": "SDE",
+            "title": "Software Development Engineer",
             "company": "Amazon",
             "company_url": "https://amazon.com",
-            "date": "05/2015 - 10/2016",
-            "team": "TFS-backend-team, responsible for financial-operations of Amazon-worldwide-transportation.",
-            "technologies": "<strong>Java</strong>, <strong>JavaScript</strong>, <strong>AWS</strong>, <strong>Oracle-RDB</strong>, <strong>DynamoDB</strong>, <strong>SQS</strong>, <strong>SNS</strong>, <strong>SWF</strong>, <strong>Redshift</strong>, <strong>Lambda</strong>, <strong>S3</strong>, <strong>Data-Pipelines</strong>, etc.",
+            "location": "Hyderabad",
+            "date": "May 2015 - Oct 2016",
+            "team": "Transportation Financial Services · Refunds & Cost Allocation",
+            "product": "Customer Refunds Platform, Cost Allocation Service (Internal B2B)",
             "achievements": [
-                "Re-architected for scale and owned Import-Fee-Duty-(IFD)-Refund-service (processed about <span class=\"achievement-highlight\">$1 million worth IFD per day</span>).",
-                "Contributed to various high-business/customer-impact initiatives and projects with <span class=\"achievement-highlight\">>90% test-code-coverage</span>."
-            ]
+                "<strong>Customer Experience Impact:</strong> Re-architected refunds service processing <span class=\"achievement-highlight\">USD 1M+/day</span>, improving <span class=\"achievement-highlight\">customer refund experience by 50%</span> and <span class=\"achievement-highlight\">reducing operational issues by 97%</span>. Applied Amazon's customer-obsession principles.",
+                "<strong>Cross-team Collaboration:</strong> Built Cost Allocation Service handling <span class=\"achievement-highlight\">1M+ events/day</span>, integrating with <span class=\"achievement-highlight\">6+ teams</span> across transportation, finance, and operations. Designed generic allocators enabling reuse.",
+                "<strong>Data-Driven Decisions:</strong> Created reusable data-pipeline framework for Redshift analytics, <span class=\"achievement-highlight\">adopted company-wide</span>. Established metrics and dashboards for peak-preparation and performance monitoring."
+            ],
+            "transition": "Sought product ownership and hands-on startup exposure after mastering Amazon's leadership principles and tech practices."
+        }
+    ],
+    "entrepreneurialExperience": [
+        {
+            "title": "Engineering & Product Lead",
+            "company": "Lifease",
+            "company_url": "https://lifease.in",
+            "location": "Bangalore",
+            "date": "Aug 2023 - Dec 2023",
+            "team": "Hyperlocal E-commerce D2C Platform",
+            "product": "D2C Marketplace, Seller Platform, Order Management (B2C/B2B)",
+            "achievements": [
+                "<strong>Product Vision & Strategy:</strong> Defined product roadmap for hyperlocal D2C marketplace. Worked directly with business to finalize requirements, ambiguities, and priorities. Led 7-person team from concept to launch.",
+                "<strong>Go-to-Market:</strong> Executed seller acquisition strategy, <span class=\"achievement-highlight\">onboarding 3000+ sellers</span> in Bangalore. Achieved <span class=\"achievement-highlight\">150+ daily orders</span> through targeted growth campaigns.",
+                "<strong>Search & Discovery:</strong> Improved generic-search and autocomplete using <span class=\"achievement-highlight\">success metrics and search heuristics</span>. Prioritized tech-debt, stabilized production, reduced bugs by <span class=\"achievement-highlight\">80%</span>."
+            ],
+            "transition": "Pre-seed stage; market conditions and funding landscape posed challenges during 2023 tech downturn."
+        },
+        {
+            "title": "Product Architect",
+            "company": "VERSE",
+            "company_url": "https://verseisbetter.com",
+            "location": "Bangalore",
+            "date": "Feb 2023 - Jul 2023",
+            "team": "Founding Member · AI-Enabled Social Network for Professionals",
+            "product": "AI-Powered Professional Networking Platform (B2C)",
+            "achievements": [
+                "<strong>Product Vision & Strategy:</strong> Defined product direction for AI-enabled social platform targeting influencers, investors, and founders. Led product discovery and feature prioritization.",
+                "<strong>Rapid Experimentation:</strong> Built modular design with experimentation framework and metrics dashboard. Quickly tested <span class=\"achievement-highlight\">30+ concepts and flows</span> to find product-market fit.",
+                "<strong>User Acquisition:</strong> <span class=\"achievement-highlight\">Acquired 20K users</span>, grew to <span class=\"achievement-highlight\">5K WAU</span> through product-led growth. Designed AI-persona, curated introductions, and smart reminders via WhatsApp interface."
+            ],
+            "transition": "Pivoted to job opportunities during the 2023 tech market correction and layoff wave."
+        },
+        {
+            "title": "Founder & Product Architect",
+            "company": "Enlite",
+            "company_url": "https://enlite.in",
+            "location": "Bangalore",
+            "date": "Feb 2020 - Oct 2020",
+            "team": "EdTech Platform for Virtual Learning and Online Exams",
+            "product": "Virtual Classroom, Online Exams, Proctoring Solution (B2B EdTech)",
+            "achievements": [
+                "<strong>Customer Discovery:</strong> Conducted discussions with <span class=\"achievement-highlight\">school teachers, college professors, and students</span> to gather feedback. Identified COVID-driven demand gap. Built features addressing educator pain points.",
+                "<strong>Feature Innovation:</strong> Designed AI-powered proctoring with face-detection, eye-tracking, and OCR for automated evaluation. Flexible prepaid pricing model differentiated from competitors.",
+                "<strong>Validation & Traction:</strong> Smartphone-first, low-bandwidth design for Indian market. <span class=\"achievement-highlight\">Demoed at 6+ IITs</span>, signed multiple MoUs, got positive feedback from coaching institutes."
+            ],
+            "transition": "Microsoft Teams and Cisco Webex offered free subscriptions during COVID; limited resources to compete."
+        },
+        {
+            "title": "Co-Founder & Product Architect",
+            "company": "Fataka Games",
+            "company_url": "https://fataka.com",
+            "location": "Bangalore",
+            "date": "May 2018 - Dec 2018",
+            "team": "Real-time Multiplayer Gaming Studio",
+            "product": "Casual Mobile Games, Regional Language Gaming (B2C)",
+            "achievements": [
+                "<strong>Product Strategy:</strong> Identified market gap for regional-language casual games. Built reusable framework enabling <span class=\"achievement-highlight\">any game launch within 2 weeks</span>. Launched <span class=\"achievement-highlight\">5 multiplayer games</span>.",
+                "<strong>Retention & Growth:</strong> <span class=\"achievement-highlight\">Shabd Khel</span> achieved 30K+ downloads, <span class=\"achievement-highlight\">51% D1 retention</span> (industry benchmark: 25-30%). Localized for <span class=\"achievement-highlight\">7 Indian languages</span> with auto-generated levels.",
+                "<strong>Investor Validation:</strong> Received <span class=\"achievement-highlight\">positive feedback from Elevation Capital</span> on retention metrics. Got merger invitation from competitor <span class=\"achievement-highlight\">Bombay Play</span>, validating product-market fit."
+            ],
+            "transition": "Ran out of personal savings; positive feedback but no immediate pre-seed investment materialized."
         }
     ],
     "education": [
@@ -163,19 +170,22 @@
             "score": "CGPA: 8.81/10",
             "score_value": 8.81,
             "score_max": 10,
+            "note": "NJACK Coordinator (2013-14): Led Computer Science Club; prepared students for ACM ICPC, Google Code Jam.",
             "badges": [
+                "CS Club Coordinator",
                 "Coding Awards",
                 "Marathon Runner",
                 "Artist Awards",
-                "Band Music, Singing Awards",
+                "Band Music",
                 "Special Services Award"
             ]
         },
         {
             "degree": "Intermediate",
-            "institution": "St. Andrew’s Public School, Agra",
+            "institution": "St. Andrew's Public School, Agra",
             "institution_url": "http://www.standrewspublicschool.com/",
             "date": "May 2011",
+            "board": "CBSE Board",
             "score": "Percentage: 84%",
             "score_value": 84,
             "score_max": 100,
@@ -186,9 +196,10 @@
         },
         {
             "degree": "Matriculation",
-            "institution": "St. Peter’s College, Agra",
+            "institution": "St. Peter's College, Agra",
             "institution_url": "http://www.stpetersagra.org/",
             "date": "May 2009",
+            "board": "ICSE Board",
             "score": "Percentage: 91.4%",
             "score_value": 91.4,
             "score_max": 100,
@@ -206,27 +217,27 @@
         {
             "title": "<span class=\"achievement-highlight\">Distributed Algorithm</span> for Robust and Interference Free Topology in Cognitive Radio Networks",
             "links": [
-                { "name": "ACM MobiHoc 2017", "url": "https://goo.gl/rNCQxn" },
+                { "name": "ACM MobiHoc 2017", "url": "https://dl.acm.org/doi/10.1145/3084041.3084063" },
                 { "name": "PDF", "url": "https://goo.gl/xh6mMR" }
             ]
         },
         {
             "title": "<span class=\"achievement-highlight\">Road congestion sensing</span> via crowdsourcing and MapReduce",
             "links": [
-                { "name": "ACM IPSN 2015", "url": "https://goo.gl/hCGAke" },
+                { "name": "ACM IPSN 2015", "url": "https://dl.acm.org/doi/10.1145/2737095.2745399" },
                 { "name": "PDF", "url": "https://goo.gl/CDM3S6" }
             ]
         },
         {
             "title": "<span class=\"achievement-highlight\">Smartphone sensing</span> for large dataset collection of potholes",
             "links": [
-                { "name": "ACM MobiSys 2013", "url": "https://goo.gl/WvT6gw" },
+                { "name": "ACM MobiSys 2013", "url": "https://dl.acm.org/doi/10.1145/2462456.2465693" },
                 { "name": "PDF", "url": "http://goo.gl/HGPqnZ" },
                 { "name": "GitHub", "url": "http://goo.gl/yjnNIs" }
             ]
         },
         {
-            "title": "Product - <span class=\"achievement-highlight\">FARM</span>",
+            "title": "Product - <span class=\"achievement-highlight\">FARM</span> (Rules Engine @ Navi)",
             "links": [
                 { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/product-farm" }
             ]
@@ -234,45 +245,62 @@
         {
             "title": "<span class=\"achievement-highlight\">Payments System</span> and General Ledger",
             "links": [
-                { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/product-farm" }
+                { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/payments-management-system" }
             ]
         },
         {
-            "title": "Virtual stock exchange - <span class=\"achievement-highlight\">Stock Mart</span>",
+            "title": "Virtual stock exchange - <span class=\"achievement-highlight\">Stock Mart</span> (26 stars, Rust)",
             "links": [
-                { "name": "GitHub", "url": "http://goo.gl/z3i4wU" }
+                { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/stockmart" }
             ]
         },
         {
-            "title": "Particle simulation engine - <span class=\"achievement-highlight\">Spark Apocalypse</span>",
+            "title": "Particle simulation engine - <span class=\"achievement-highlight\">Spark Apocalypse</span> (OpenGL)",
             "links": [
-                { "name": "GitHub", "url": "http://goo.gl/Vte6js" }
+                { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/SparkApocalypse" }
             ]
         },
         {
             "title": "<span class=\"achievement-highlight\">Alligator inspired</span> quadruped robot",
             "links": [
-                { "name": "GitHub", "url": "http://goo.gl/RztkyE" }
+                { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/quadruped-robot" }
             ]
         },
         {
-            "title": "Animating LEDs to the rhythm of music - <span class=\"achievement-highlight\">Colorful Sound</span>",
+            "title": "Animating LEDs to the rhythm of music - <span class=\"achievement-highlight\">Colorful Sound</span> (FFT/LEDs)",
             "links": [
-                { "name": "GitHub", "url": "http://goo.gl/hgFYpr" }
+                { "name": "GitHub", "url": "https://github.com/ayushmaanbhav/ColorfulSound" }
             ]
         }
     ],
     "awards": [
-        "<span class=\"achievement-highlight\">Top interviewer of the month</span> (2021): Got iPhone as an award.",
-        "Recognition for <span class=\"achievement-highlight\">swift development</span> of the Navi Health Insurance App (2020): Got an appreciation note from Sachin Bansal.",
-        "Recognition for <span class=\"achievement-highlight\">outstanding leadership</span> on the Poker and Rummy project (2018): Contribution at Moonfrog Labs.",
-        "<span class=\"achievement-highlight\">Coordinator of Computer Science Club</span> (2013-14): Prepared students for coding contests.",
-        "<span class=\"achievement-highlight\">9th Position, National Hacking Contest</span> (2014): Stood 9th in Microsoft HackCon 2014."
+        "<span class=\"achievement-highlight\">Personal Recognition from Sachin Bansal</span> (Flipkart Co-founder): Swift development of Navi Health Insurance App (2020).",
+        "<span class=\"achievement-highlight\">Top Interviewer of the Month</span> (2021): Received iPhone as award at Navi.",
+        "<span class=\"achievement-highlight\">Outstanding Leadership Award</span> (2018): Contribution on Poker and Rummy project achieving 5M DAU at Moonfrog Labs.",
+        "<span class=\"achievement-highlight\">1st Place, DreamWorks Hackathon</span>: Among 2000+ participants.",
+        "<span class=\"achievement-highlight\">9th Position, Microsoft HackCon</span> (2014): Among 239 teams.",
+        "<span class=\"achievement-highlight\">IIT-JEE 2011: Top 0.4%</span> among 10+ lakh candidates.",
+        "<span class=\"achievement-highlight\">College Leadership:</span> Recognized for contributions to CS Club, Training & Placement Cell, Robotics Club, Quiz Club, Cultural Club; won coding competitions."
     ],
-    "skills": [
-        "C++", "Java", "Kotlin", "Android", "JS", "React", "Go", "C#", "Unity", "SQL", "AWS", "GCP", "Azure", "Unix", "Databases", "Queues", "Workflows", "Temporal", "LLMs"
-    ],
+    "skills": {
+        "Product": ["Product Strategy", "Roadmap Planning", "User Research", "Customer Interviews", "A/B Testing", "Experimentation", "PRDs", "User Stories", "OKRs/KPIs", "Agile/Scrum", "Sprint Planning", "Backlog Prioritization", "Go-to-Market", "Competitive Analysis"],
+        "Analytics": ["Product Analytics", "Firebase", "MoEngage", "Amplitude", "Mixpanel", "Redshift", "Data Pipelines", "Funnel Analysis", "Cohort Analysis", "Retention Metrics", "Conversion Optimization"],
+        "Technical": ["Java", "Python", "JavaScript", "TypeScript", "SQL", "React", "NodeJS", "SpringBoot", "Android", "AWS", "Azure", "GCP", "Kubernetes"],
+        "AI/GenAI": ["OpenAI", "Claude", "Gemini", "Copilot", "LangChain", "AI Agents"],
+        "Domains": ["FinTech", "InsureTech", "Gaming", "E-commerce", "EdTech", "Enterprise SaaS", "Supply Chain", "B2B", "B2C", "D2C"],
+        "Leadership": ["Cross-functional Collaboration", "Stakeholder Management", "Team Building", "Hiring", "Mentorship", "Executive Communication", "Business Acumen", "Strategic Thinking", "Problem-solving"]
+    },
     "hobbies": [
-        "Yoga", "Guitar", "Chess", "Geopolitics", "Science", "History", "Facts", "Skating", "Swimming", "Scuba", "Traveling", "Cooking", "Painting", "Movies"
-    ]
+        { "name": "Skating & Skiing", "icon": "skating", "detail": "10+ years", "places": "Auli · Salzburg · Gulmarg" },
+        { "name": "Guitar", "icon": "guitar", "detail": "10+ years", "places": "College band" },
+        { "name": "Scuba Diving", "icon": "scuba", "detail": "7+ locations", "places": "Global diver" },
+        { "name": "Traveling", "icon": "traveling", "detail": "9+ countries", "places": "15+ states explored" },
+        { "name": "Heritage Sites", "icon": "heritage", "detail": "Since childhood", "places": "History enthusiast" },
+        { "name": "Pilgrimages", "icon": "pilgrimages", "detail": "Ancient temples", "places": "Jain culture" },
+        { "name": "Cooking", "icon": "cooking", "detail": "Expert chef", "places": "Multi-cuisine" },
+        { "name": "Chess", "icon": "chess", "detail": "Strategic", "places": "Regular player" },
+        { "name": "Yoga", "icon": "yoga", "detail": "Daily practice", "places": "Mind & body" },
+        { "name": "Swimming", "icon": "swimming", "detail": "Regular", "places": "Fitness" }
+    ],
+    "alsoInterests": "Geopolitics, Science, History, Facts, Painting, Movies"
 }

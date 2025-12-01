@@ -3,7 +3,9 @@ import React from 'react';
 const Navigation = ({ activeSection }) => {
     const navItems = [
         { id: 'summary', label: 'Summary' },
+        { id: 'metrics', label: 'Metrics' },
         { id: 'experience', label: 'Experience' },
+        { id: 'entrepreneurial', label: 'Startups' },
         { id: 'education', label: 'Education' },
         { id: 'publications', label: 'Publications' },
         { id: 'awards', label: 'Awards' },
