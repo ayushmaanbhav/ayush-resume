@@ -53,8 +53,20 @@ const Skills = ({ data }) => {
         );
     }
 
-    // New format - categorized object
+    // New format - categorized object with items and optional comment
     const categories = Object.keys(data);
+
+    // Helper to get items array - handles both old format (array) and new format (object with items)
+    const getItems = (categoryData) => {
+        if (Array.isArray(categoryData)) return categoryData;
+        return categoryData.items || [];
+    };
+
+    // Helper to get comment
+    const getComment = (categoryData) => {
+        if (Array.isArray(categoryData)) return null;
+        return categoryData.comment || null;
+    };
 
     return (
         <section id="skills" className="page-section">
@@ -68,6 +80,8 @@ const Skills = ({ data }) => {
                         {categories.map((category, catIndex) => {
                             const config = categoryConfig[category] || { icon: '✨', color: '#a78bfa', gradient: 'linear-gradient(135deg, #a78bfa, #818cf8)' };
                             const isActive = activeCategory === category;
+                            const items = getItems(data[category]);
+                            const comment = getComment(data[category]);
 
                             return (
                                 <div
@@ -103,11 +117,16 @@ const Skills = ({ data }) => {
                                             fontSize: '0.75rem',
                                             marginLeft: 'auto'
                                         }}>
-                                            {data[category].length}
+                                            {items.length}
                                         </span>
                                     </div>
+                                    {comment && (
+                                        <p className="skill-comment">
+                                            {comment}
+                                        </p>
+                                    )}
                                     <div className="tags-container">
-                                        {data[category].map((skill, index) => (
+                                        {items.map((skill, index) => (
                                             <span
                                                 className="skill-tag skill-tag-small"
                                                 key={index}

@@ -474,6 +474,20 @@ strong, b {
     letter-spacing: 0.5px;
 }
 
+.transition-tag {
+    background: linear-gradient(135deg, rgba(130, 130, 130, 0.3), rgba(130, 130, 130, 0.15));
+    color: #a0a0a0;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    margin-right: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-style: normal;
+}
+
 /* ===== KEY METRICS SECTION ===== */
 .metrics-grid {
     display: grid;
@@ -863,6 +877,15 @@ strong, b {
     font-size: 1.15rem;
     font-weight: 700;
     letter-spacing: 0.5px;
+}
+
+.skill-comment {
+    font-size: 0.8rem;
+    color: rgba(160, 160, 160, 0.8);
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 0 0.75rem 0;
+    padding-left: 0.25rem;
 }
 
 .tags-container {

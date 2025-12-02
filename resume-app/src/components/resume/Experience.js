@@ -92,7 +92,7 @@ const Experience = ({ data, title = "Work Experience", isEntrepreneurial = false
                                 </ul>
                                 {job.transition && (
                                     <div className="job-transition">
-                                        <span className="transition-icon">→</span> <em>{job.transition}</em>
+                                        <span className="transition-tag">[Transition]</span> <em>{job.transition}</em>
                                     </div>
                                 )}
                             </div>

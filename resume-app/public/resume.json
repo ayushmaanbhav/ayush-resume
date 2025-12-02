@@ -304,11 +304,24 @@
         "<span class=\"achievement-highlight\">College Leadership:</span> Recognized for contributions to CS Club, Training & Placement Cell, Robotics Club, Quiz Club, Cultural Club; won coding competitions."
     ],
     "skills": {
-        "Product": ["Product Strategy", "0→1 Launches", "User Research", "Customer Interviews", "A/B Testing", "Experimentation", "PRDs", "OKRs/KPIs", "Roadmaps", "Funnel Analysis", "Retention", "Go-to-Market", "Stakeholder Management"],
-        "Engineering": ["Java", "Kotlin", "Python", "TypeScript", "Go", "Rust", "C#", "C++", "SQL", "SpringBoot", "React", "NodeJS", ".NET", "Android", "Unity", "Cocos-2d", "Gin", "FastAPI"],
-        "Infrastructure": ["AWS", "Azure", "GCP", "Kubernetes", "Docker", "Kafka", "Redis", "Postgres", "DynamoDB", "MongoDB", "Elasticsearch", "SQS", "SNS", "S3", "Camunda", "Temporal"],
-        "AI/GenAI": ["OpenAI", "Claude", "Gemini", "Copilot", "LangChain", "AI Agents", "MCP", "Cursor", "N8N", "Ollama", "Embeddings", "Vector Search"],
-        "Domains": ["FinTech", "InsureTech", "Gaming", "E-commerce", "EdTech", "Enterprise SaaS", "Supply Chain", "B2B", "B2C", "D2C"]
+        "Product": {
+            "items": ["Product Strategy", "0→1 Launches", "User Research", "Customer Interviews", "A/B Testing", "Experimentation", "PRDs", "OKRs/KPIs", "Roadmaps", "Funnel Analysis", "Retention", "Go-to-Market", "Stakeholder Management"]
+        },
+        "Engineering": {
+            "items": ["Java", "Kotlin", "Python", "TypeScript", "Go", "Rust", "C#", "C++", "SQL", "SpringBoot", "React", "NodeJS", ".NET", "Android", "Unity", "Cocos-2d", "Gin", "FastAPI"],
+            "comment": "Polyglot"
+        },
+        "Infrastructure": {
+            "items": ["AWS", "Azure", "GCP", "Kubernetes", "Docker", "Kafka", "Redis", "Postgres", "DynamoDB", "MongoDB", "Elasticsearch", "SQS", "SNS", "S3", "Camunda", "Temporal"],
+            "comment": "Cloud-agnostic, Distributed Systems, DevOps"
+        },
+        "AI/GenAI": {
+            "items": ["OpenAI", "Claude", "Gemini", "Copilot", "LangChain", "AI Agents", "MCP", "Cursor", "N8N", "Ollama", "Embeddings", "Vector Search"],
+            "comment": "Hands-on AI product building"
+        },
+        "Domains": {
+            "items": ["FinTech", "InsureTech", "Gaming", "E-commerce", "EdTech", "Enterprise SaaS", "Supply Chain", "B2B", "B2C", "D2C"]
+        }
     },
     "hobbies": [
         { "name": "Skating & Skiing", "icon": "skating", "detail": "10+ years", "places": "Auli · Gulmarg · Salzburg" },
@@ -322,5 +335,5 @@
         { "name": "Cooking", "icon": "cooking", "detail": "Expert chef", "places": "Multi-cuisine" },
         { "name": "Heritage Sites", "icon": "heritage", "detail": "History enthusiast", "places": "Since childhood" }
     ],
-    "alsoInterests": "Yoga, Swimming, Pilgrimages (Jain temples), Heritage Sites, Cooking (Multi-cuisine), Geopolitics, Science, History, Painting, Movies"
+    "alsoInterests": "Geopolitics, Science, History, Painting, Movies"
 }
