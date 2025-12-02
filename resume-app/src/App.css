@@ -207,14 +207,15 @@ strong, b {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
 .header-main {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 /* Profile picture with orbital rings */
@@ -286,6 +287,11 @@ strong, b {
 .name-container {
     position: relative;
     display: inline-block;
+    white-space: nowrap;
+}
+
+.name-container h1 {
+    white-space: nowrap;
 }
 
 .name-char {
@@ -360,7 +366,6 @@ strong, b {
 .contact-info {
     font-size: 0.95rem;
     text-align: right;
-    flex-shrink: 0;
     background: rgba(0, 0, 0, 0.3);
     padding: 1rem 1.5rem;
     border-radius: 16px;
@@ -414,6 +419,59 @@ strong, b {
 .achievement-highlight:hover {
     background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(245, 158, 11, 0.2));
     box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+}
+
+/* Achievement Tags - Product/Engineering/Leadership */
+.product-tag {
+    background: linear-gradient(135deg, rgba(156, 89, 35, 0.3), rgba(156, 89, 35, 0.15));
+    color: #d4a574;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    border: 1px solid rgba(156, 89, 35, 0.4);
+    margin-right: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, rgba(37, 99, 135, 0.3), rgba(37, 99, 135, 0.15));
+    color: #7cb8d4;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    border: 1px solid rgba(37, 99, 135, 0.4);
+    margin-right: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.leadership-tag {
+    background: linear-gradient(135deg, rgba(30, 86, 120, 0.3), rgba(30, 86, 120, 0.15));
+    color: #7ab8e0;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    border: 1px solid rgba(30, 86, 120, 0.4);
+    margin-right: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ai-tag {
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.3), rgba(167, 139, 250, 0.15));
+    color: #c4b5fd;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    border: 1px solid rgba(167, 139, 250, 0.4);
+    margin-right: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* ===== KEY METRICS SECTION ===== */
@@ -1470,13 +1528,27 @@ strong, b {
 
 /* ===== MAGIC WAND SPARKS ===== */
 .magic-wand-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.magic-wand-container p {
+    margin: 0;
+}
+
+.subtitle-text {
+    color: rgba(167, 139, 250, 0.9);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 0.2rem !important;
 }
 
 .sparks {
-    position: relative;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
 }

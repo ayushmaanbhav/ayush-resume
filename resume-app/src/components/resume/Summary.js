@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 const Summary = ({ data }) => {
-    const { name, title, contact, hashtags, personalSummary } = data || {};
+    const { name, title, subtitle, contact, hashtags, personalSummary } = data || {};
     const nameRef = useRef(null);
 
     useEffect(() => {
@@ -73,6 +73,7 @@ const Summary = ({ data }) => {
                             <div className="magic-wand-container">
                                 <div className="sparks"></div>
                                 <p><span className="burning-highlight">{title}</span></p>
+                                {subtitle && <p className="subtitle-text">{subtitle}</p>}
                             </div>
                         </div>
                     </div>
