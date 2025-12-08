@@ -1,7 +1,9 @@
-on:
-  push:
-    branches:
-      - 'master'
+# Disabled - using self-hosted Pingora deployment instead of Firebase
+# on:
+#   push:
+#     branches:
+#       - 'master'
+on: workflow_dispatch  # Manual trigger only
 
 jobs:
   build_and_deploy:
