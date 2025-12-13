@@ -1,0 +1,19 @@
+[Unit]
+Description=Ayushmaanbhav.me Static Website Server
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/ayushmaanbhav.me
+ExecStart=/usr/bin/python3 -m http.server 8080
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ayushmaanbhav-me
+
+[Install]
+WantedBy=multi-user.target
