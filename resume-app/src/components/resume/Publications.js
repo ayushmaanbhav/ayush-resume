@@ -5,13 +5,6 @@ const Publications = ({ data }) => {
 
     if (!data) return null;
 
-    const typeIcons = {
-        'ACM': '📄',
-        'GitHub': '💻',
-        'PDF': '📑',
-        'default': '📖'
-    };
-
     const getIcon = (links) => {
         if (links.some(l => l.name.includes('ACM'))) return '📄';
         if (links.some(l => l.name.includes('GitHub'))) return '💻';

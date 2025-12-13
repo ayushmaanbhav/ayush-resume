@@ -15,6 +15,43 @@ const AnimatedNumber = ({ value, duration = 2000 }) => {
     const animatedRef = useRef(false);
 
     useEffect(() => {
+        const animateValue = () => {
+            // Extract numeric part and suffix
+            const match = value.match(/^([\d.]+)(.*)$/);
+            if (!match) {
+                setDisplayValue(value);
+                return;
+            }
+
+            const numericValue = parseFloat(match[1]);
+            const suffix = match[2] || '';
+            const startTime = performance.now();
+            const isDecimal = value.includes('.');
+
+            const animate = (currentTime) => {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+
+                // Easing function for smooth animation
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                const currentValue = numericValue * easeOutQuart;
+
+                if (isDecimal) {
+                    setDisplayValue(currentValue.toFixed(0) + suffix);
+                } else {
+                    setDisplayValue(Math.floor(currentValue) + suffix);
+                }
+
+                if (progress < 1) {
+                    requestAnimationFrame(animate);
+                } else {
+                    setDisplayValue(value);
+                }
+            };
+
+            requestAnimationFrame(animate);
+        };
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach(entry => {
@@ -32,44 +69,7 @@ const AnimatedNumber = ({ value, duration = 2000 }) => {
         }
 
         return () => observer.disconnect();
-    }, [value]);
-
-    const animateValue = () => {
-        // Extract numeric part and suffix
-        const match = value.match(/^([\d.]+)(.*)$/);
-        if (!match) {
-            setDisplayValue(value);
-            return;
-        }
-
-        const numericValue = parseFloat(match[1]);
-        const suffix = match[2] || '';
-        const startTime = performance.now();
-        const isDecimal = value.includes('.');
-
-        const animate = (currentTime) => {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-
-            // Easing function for smooth animation
-            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-            const currentValue = numericValue * easeOutQuart;
-
-            if (isDecimal) {
-                setDisplayValue(currentValue.toFixed(0) + suffix);
-            } else {
-                setDisplayValue(Math.floor(currentValue) + suffix);
-            }
-
-            if (progress < 1) {
-                requestAnimationFrame(animate);
-            } else {
-                setDisplayValue(value);
-            }
-        };
-
-        requestAnimationFrame(animate);
-    };
+    }, [value, duration]);
 
     return <span ref={elementRef}>{displayValue}</span>;
 };
